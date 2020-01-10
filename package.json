@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Challenge",
+=======
+  "name": "gabas",
+>>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
   "private": true,
   "dependencies": {}
 }

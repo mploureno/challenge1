@@ -17,7 +17,11 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module Challenge
+=======
+module Gabas
+>>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
