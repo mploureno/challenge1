@@ -18,6 +18,8 @@ gem 'bcrypt', '>= 3.1.12'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.9'
+  gem 'rubocop', require: false 
+  gem 'rubocop-rspec'
 end
 
 group :development do
@@ -29,6 +31,8 @@ end
 
 group :test do 
   gem 'faker'
+  gem 'shoulda-matchers', '>= 4.2.0'
+  gem 'simplecov', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
