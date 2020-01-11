@@ -1,12 +1,12 @@
 Rails.application.configure do
-<<<<<<< HEAD
+
   config.cache_classes = false
   config.eager_load = false
   config.consider_all_requests_local = true
 
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
-=======
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -25,14 +25,13 @@ Rails.application.configure do
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
     config.action_controller.perform_caching = true
 
->>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
     config.cache_store = :memory_store
     config.public_file_server.headers = {
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
     }
   else
     config.action_controller.perform_caching = false
-<<<<<<< HEAD
+
     config.cache_store = :null_store
   end
 
@@ -45,7 +44,7 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
   config.assets.debug = true
   config.assets.quiet = true
-=======
+
 
     config.cache_store = :null_store
   end
@@ -80,6 +79,6 @@ Rails.application.configure do
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
->>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
+
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
