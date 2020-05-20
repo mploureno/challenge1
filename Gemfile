@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'figaro'
 gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 1.2.2'
 gem 'puma', '~> 3.11'
