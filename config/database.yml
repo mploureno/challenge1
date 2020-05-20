@@ -1,21 +1,12 @@
 default: &default
-  adapter: postgresql
+  adapter:  postgresql
   encoding: unicode
-  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
-  host: localhost
-  username: <%= ENV['DATABASE_USERNAME'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: mp
+  password: <%= ENV['CHALLENGE_DATABASE_PASSWORD'] %>
 
 development:
-  <<: *default
-  database: <%= "#{ENV['DATABASE_NAME']}_development" %>
+  <<: *default  
+  database: challenge1_development
+  
 
-test:
-  <<: *default
-  database: <%= "#{ENV['DATABASE_NAME']}_test" %>
-
-production:
-  <<: *default
-  database: <%= "#{ENV['DATABASE_NAME']}_production" %>
-  username: <%= ENV['DATABASE_USERNAME'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
