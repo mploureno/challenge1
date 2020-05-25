@@ -6,7 +6,7 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 gem 'devise', '~> 4.2'
 gem 'pg', '>= 1.2.2'
-gem 'puma', '~> 3.11'
+gem "puma", ">= 3.12.6"
 gem 'sassc'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
