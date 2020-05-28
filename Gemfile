@@ -3,11 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'rails', '~> 5.2.3'
 gem 'devise', '~> 4.2'
 gem 'pg', '>= 1.2.2'
-gem "puma", ">= 3.12.6"
-gem 'sassc'
+gem 'puma', '>= 3.12.6'
+gem 'sassc', '~> 2.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
