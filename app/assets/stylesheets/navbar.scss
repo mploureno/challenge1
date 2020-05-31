@@ -1,9 +1,6 @@
 .navbar {
   position: fixed;
-  background-color: var(--bg-primary);
   .navbar-nav {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -12,7 +9,8 @@
       width: 100%;
       .logo {
         display: flex;
-        height: 4rem;
+        height: 4.5rem;
+        justify-content: center;
         align-items: center;
         font-weight: bold;
         text-decoration: none;
@@ -20,18 +18,24 @@
         margin-bottom: 1rem;
         background: var(--logo-bg);
         color: var(--logo-text);
-        font-size: 1.1rem;
-        letter-spacing: 0.3ch;
         width: 100%;
-        transition: var(--transition-speed);
         &:hover {
           .logo-text {
             color: var(--logo-text-hover);
           }
           .logo-no {
+            transition: var(--transition-speed);
             color: var(--logo-no);
           }
-        }  
+        }
+        .logo-text {          
+          font-size: 1rem;
+          letter-spacing: 0.45ch;
+        } 
+        .logo-no {
+          font-size: 1.7rem; 
+          letter-spacing: -0.2ch;          
+        } 
       }
       .nav-link {
         display: flex;
@@ -56,13 +60,13 @@
 }
 
 /* SMALL SCREENS */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 3.8rem;
     .navbar-nav {
-      background: var(--bg-secondary);
+      background: var(--bg-nav);
       flex-direction: row;
       .nav-item {
         .nav-link {
@@ -84,13 +88,18 @@
 }
 
 /* LARGE SCREENS */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .navbar {
     top: 0;
     width: 10rem;
     height: 100vh;
+    background-color: var(--bg-nav);    
     .nav-item:last-child {
       margin-top: auto;
     }
-  } 
+  }
+  
+  main {
+    margin-left: 10rem;
+  }
 }

@@ -1,9 +1,14 @@
 @import "navbar";
 @import "selectors";
-@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body { 
-  margin: 0;
-  padding: 0;
+  display: flex;
+}
+
+main {
+  flex: 1;
+  height: 100vh;
+  padding: 1rem;
+  background: var(--bg-secondary);
 }
