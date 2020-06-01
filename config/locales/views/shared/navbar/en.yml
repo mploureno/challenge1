@@ -1,0 +1,8 @@
+en: 
+  shared:
+    navbar:
+      app_name: "Challenge"
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      add_client: "Add"
+      list_clients: "Clients"
