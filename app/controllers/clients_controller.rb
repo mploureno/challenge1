@@ -17,14 +17,14 @@ class ClientsController < ApplicationController
   end
 
   private
-    
-    def client_params
-      params.require(:client).permit(
-        :first_name,
-        :last_name,
-        :email,
-        :mobile_phone
-        :profile_photo      
-      )
-
+  
+  def client_params
+    params.require(:client).permit(
+      :first_name,
+      :last_name,
+      :email,
+      :mobile_phone,
+      :profile_photo      
+    )
+  end
 end
