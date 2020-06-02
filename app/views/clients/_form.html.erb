@@ -1,0 +1,23 @@
+<%= form_for(client, url: url) do |f| %>
+  <div class="form">
+    <%= f.text_field :first_name,
+                     autofocus:true,
+                     autocomplete: 'on',
+                     placeholder: t('.name') %>
+  </div>
+  <div class="form">
+    <%= f.text_field :last_name,
+                     autocomplete: 'on',
+                     placeholder: t('.last_name') %>
+  </div>
+  <div class="form">
+    <%= f.email_field :email,
+                     autocomplete: 'on',
+                     placeholder: t('.email') %>
+  </div>
+  <div class="form">
+    <%= f.text_field :mobile_phone,
+                     autocomplete: 'on',
+                     placeholder: t('.phone') %>
+  </div>
+<% end %>  

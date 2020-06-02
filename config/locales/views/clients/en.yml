@@ -1,0 +1,13 @@
+en: 
+  clients:
+    form:
+      name: "Name"
+      last_name: "Last Name"
+      email: "example@email.com"
+      phone: "(00) 00000-0000"
+    edit:
+      header: "Edit"
+    index:
+    new:
+      header: "New Client"
+    show:  
