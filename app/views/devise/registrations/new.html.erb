@@ -1,0 +1,35 @@
+<h3><%= t('.header') %></h3>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div>
+    <%= f.text_field :first_name,
+                      autofocus: true,
+                      autocomplete: 'on',
+                      placeholder: t('activerecord.attributes.user.email') %>
+  </div>
+  <div>
+    <%= f.text_field :last_name,
+                      autofocus: true,
+                      autocomplete: 'on',
+                      placeholder: t('activerecord.attributes.user.email') %>
+  </div>
+  <div>
+    <%= f.email_field :email,
+                      autofocus: true,
+                      autocomplete: 'on',
+                      placeholder: t('activerecord.attributes.user.email') %>
+  </div>
+  <div>
+    <%= f.password_field :password,
+                          autocomplete: 'off',
+                          placeholder: t('activerecord.attributes.user.password') %>
+  </div>
+  <div>
+    <%= f.password_field :password_confirmation,
+                          autocomplete: 'off',
+                          placeholder: t('activerecord.attributes.user.password_confirmation') %>
+  </div>  
+  <div>
+    <%= f.submit t('.login') %>
+  </div>
+<% end %>
+  
