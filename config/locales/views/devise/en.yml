@@ -1,0 +1,8 @@
+en: 
+  devise:
+    sessions:
+      new:
+        header: "Login"
+        email: "example@email.com"
+        password: "Password"
+        submit: "Go"

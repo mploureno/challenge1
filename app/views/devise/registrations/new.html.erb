@@ -4,32 +4,32 @@
     <%= f.text_field :first_name,
                       autofocus: true,
                       autocomplete: 'on',
-                      placeholder: t('activerecord.attributes.user.email') %>
+                      placeholder: t('.name') %>
   </div>
   <div>
     <%= f.text_field :last_name,
                       autofocus: true,
                       autocomplete: 'on',
-                      placeholder: t('activerecord.attributes.user.email') %>
+                      placeholder: t('.last_name') %>
   </div>
   <div>
     <%= f.email_field :email,
                       autofocus: true,
                       autocomplete: 'on',
-                      placeholder: t('activerecord.attributes.user.email') %>
+                      placeholder: t('.email') %>
   </div>
   <div>
     <%= f.password_field :password,
                           autocomplete: 'off',
-                          placeholder: t('activerecord.attributes.user.password') %>
+                          placeholder: t('.password') %>
   </div>
   <div>
     <%= f.password_field :password_confirmation,
                           autocomplete: 'off',
-                          placeholder: t('activerecord.attributes.user.password_confirmation') %>
+                          placeholder: t('.password_confirmation') %>
   </div>  
   <div>
-    <%= f.submit t('.login') %>
+    <%= f.submit t('.signup') %>
   </div>
 <% end %>
   

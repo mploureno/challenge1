@@ -5,9 +5,11 @@ en:
       last_name: "Last Name"
       email: "example@email.com"
       phone: "(00) 00000-0000"
+      submit: "Save Client"
     edit:
       header: "Edit"
     index:
     new:
       header: "New Client"
+      back: "Cancel"
     show:  
