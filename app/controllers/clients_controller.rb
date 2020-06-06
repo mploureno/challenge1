@@ -1,6 +1,11 @@
 class ClientsController < ApplicationController
+  before_action :find_client, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @clients = Client.all.order("created_at DESC")
+  end
   
-  def index; end
+  def show; end
 
   def new 
     @client = current_user.clients.build
@@ -26,4 +31,9 @@ class ClientsController < ApplicationController
       :profile_photo      
     )
   end
+  
+  def find_client
+    @client = Client.find(params[:id])
+  end
+
 end
