@@ -6,14 +6,9 @@
 
 # Ignore bundler config.
 /.bundle
-
-<<<<<<< HEAD
-=======
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
-
->>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
@@ -32,9 +27,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-<<<<<<< HEAD
-
 # Ignore application configuration
 /config/application.yml
-=======
->>>>>>> b6cc376fa5d2e4f6c7ce0ada77901110b8046826
+

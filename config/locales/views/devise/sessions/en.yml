@@ -6,3 +6,5 @@ en:
         email: "example@email.com"
         password: "Password"
         submit: "Go"
+        registrate: "Not a member yet?"
+        signup: "Join!"
