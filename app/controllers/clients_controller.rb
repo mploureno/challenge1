@@ -28,7 +28,7 @@ class ClientsController < ApplicationController
       :last_name,
       :email,
       :mobile_phone,
-      :profile_photo      
+      :client_image      
     )
   end
   
