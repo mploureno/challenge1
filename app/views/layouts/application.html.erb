@@ -6,9 +6,9 @@
     <%= render 'shared/shim' %>
   </head>
   <body>
-    <% if current_user %>
+    <% if !form %>
       <%= render 'shared/navbar' %>
-    <% end %>  
+    <% end %>
     <main>
       <%= render 'shared/flash_messages' %>
       <%= yield %>

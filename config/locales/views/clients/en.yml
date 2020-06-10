@@ -6,10 +6,10 @@ en:
       email: "example@email.com"
       phone: "(00) 00000-0000"
       submit: "Save Client"
+    index:  
     edit:
       header: "Edit"
-      back: "Clients List"
-    index:
+      back: "Clients List"  
     new:
       header: "New Client"
       back: "Cancel"
