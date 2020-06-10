@@ -9,7 +9,7 @@ en:
     index:  
     edit:
       header: "Edit"
-      back: "Clients List"  
+      back: "Cancel"  
     new:
       header: "New Client"
       back: "Cancel"

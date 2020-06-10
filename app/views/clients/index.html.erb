@@ -2,8 +2,7 @@
   <%= link_to client_path(client), class:'clients-show' do %>
     <div class="client-card">
       <div class="client-card-container">
-        <h3><%= client.first_name %></h3>
-        <h3><%= client.last_name %></h3>
+        <h3><%= "#{ client.first_name } #{client.last_name}" %></h3>
       </div>
     </div>
   <% end %>
