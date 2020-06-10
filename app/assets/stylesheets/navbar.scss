@@ -7,36 +7,6 @@
     list-style: none;
     .nav-item {
       width: 100%;
-      .logo {
-        display: flex;
-        height: 4.5rem;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        background: var(--logo-bg);
-        color: var(--logo-text);
-        width: 100%;
-        &:hover {
-          .logo-text {           
-            color: var(--logo-text-hover);
-          }
-          .logo-no {
-            transition: var(--transition-speed);
-            color: var(--logo-no);
-          }
-        }
-        .logo-text {   
-          font-weight: bold;        
-          font-size: 1rem;
-          letter-spacing: 0.45ch;
-        } 
-        .logo-no {
-          font-size: 1.7rem; 
-          letter-spacing: -0.2ch;          
-        } 
-      }
       .nav-link {
         display: flex;
         align-items: center;
@@ -45,6 +15,7 @@
         transition: var(--transition-speed);
         color: var(--text-primary);
         &:hover {
+          .link-text { display: inline; }          
           color: var(--text-secondary);
         }
         svg {
@@ -52,11 +23,42 @@
           margin-left: 0.75rem;
         }  
         .link-text {
+          display: none;
           margin-left: 1.3rem;  
         }
       }       
     }       
   }
+  .logo {
+    display: flex;
+    height: 3rem; 
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: var(--logo-bg);
+    color: var(--logo-text);
+    &:hover {
+      .logo-text {           
+        color: var(--logo-text-hover);
+      }
+      .logo-no {
+        transition: var(--transition-speed);
+        color: var(--logo-no);
+      }
+    }
+    .logo-text {   
+      font-weight: bold;        
+      font-size: 1rem;
+      letter-spacing: 0.45ch;
+    } 
+    .logo-no {
+      font-size: 1.7rem; 
+      letter-spacing: -0.2ch;          
+    } 
+  }  
 }
 
 /* SMALL SCREENS */
@@ -91,7 +93,7 @@
 @media (min-width: 650px) {
   .navbar {
     top: 0;
-    width: 10rem;
+    width: 3rem;
     height: 100vh;
     background-color: var(--bg-nav);    
     .nav-item:last-child {
