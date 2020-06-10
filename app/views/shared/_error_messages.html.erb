@@ -1,0 +1,8 @@
+<% if object.errors.any? %>
+  <div><%= t('.validation_failed') %></div>
+  <ul>
+    <% object.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
