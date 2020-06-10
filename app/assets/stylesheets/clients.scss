@@ -1,10 +1,17 @@
-.card {
+.client-card {
+  text-align: center;
+  margin-bottom: 0.8rem;
   box-shadow: 0 4px 8px 0 var(--card-shadow);
   transition: 0.3s;
   &:hover {
     box-shadow: 0 8px 16px 0 var(--card-shadow);
   }
-  .card-container {
+  .client-card-container {
     padding: 2px 16px;
   }
+}
+
+.clients-show {
+  text-decoration: none;
+  color: black;
 }
