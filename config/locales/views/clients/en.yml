@@ -8,8 +8,12 @@ en:
       submit: "Save Client"
     edit:
       header: "Edit"
+      back: "Clients List"
     index:
     new:
       header: "New Client"
       back: "Cancel"
-    show:  
+    show: 
+      edit: "Edit"
+      delete: "Remove" 
+      confirmation: "Are you sure?"

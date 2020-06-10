@@ -1,8 +1,12 @@
-<div class="card">
-  <div class="card-container">
+<div class="client-card">
+  <div class="client-card-container">
     <h3><%= @client.first_name %></h3>
     <h3><%= @client.last_name %></h3>
     <h5><%= @client.email %></h5>
     <h5><%= @client.mobile_phone %></h5>
+  </div>
+  <div>
+    <%= link_to t('.edit'), edit_client_path %>
+    <%= link_to t('.delete'), client_path(@client), method: :delete, data: { confirm: t('.confirmation') } %>
   </div>
 </div>
