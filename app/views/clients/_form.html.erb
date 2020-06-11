@@ -2,26 +2,30 @@
   <%= render 'shared/error_messages', object: client %>
   <div class="form">
     <%= f.text_field :first_name,
-                     autofocus:true,
-                     autocomplete: 'on',
-                     placeholder: t('.name') %>
+                    autofocus:true,
+                    autocomplete: 'on',
+                    placeholder: t('.name'), 
+                    class: 'field' %>
   </div>
   <div class="form">
     <%= f.text_field :last_name,
-                     autocomplete: 'on',
-                     placeholder: t('.last_name') %>
+                    autocomplete: 'on',
+                    placeholder: t('.last_name'), 
+                    class: 'field' %>
   </div>
   <div class="form">
     <%= f.email_field :email,
-                     autocomplete: 'on',
-                     placeholder: t('.email') %>
+                    autocomplete: 'on',
+                    placeholder: t('.email'),
+                    class: 'field' %>
   </div>
   <div class="form">
     <%= f.text_field :mobile_phone,
-                     autocomplete: 'on',
-                     placeholder: t('.phone') %>
+                    autocomplete: 'on',
+                    placeholder: t('.phone'),
+                    class: 'field' %>
   </div>
   <div>
-    <%= f.submit t('.submit') %>
+    <%= f.submit t('.submit'), class: 'btn'%>
   </div>
-<% end %>  
+<% end %> 
