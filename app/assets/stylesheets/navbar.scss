@@ -24,41 +24,42 @@
         }  
         .link-text {
           display: none;
-          margin-left: 1.3rem;  
+          margin-left: 1rem; 
+          font-size: 0.8rem; 
         }
-      }       
+      }
+      .logo {
+        display: flex;
+        height: 3rem; 
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+        background: var(--logo-bg);
+        color: var(--logo-text);
+        &:hover {
+          .logo-text {          
+            color: var(--logo-text-hover);
+          }
+          .logo-no {
+            transition: var(--transition-speed);
+            color: var(--logo-no);
+          }
+        }
+        .logo-text {   
+          font-weight: bold;          
+          font-size: 0.8rem; 
+          letter-spacing: 0.45ch;
+        } 
+        .logo-no {
+          font-size: 1.7rem; 
+          letter-spacing: -0.2ch;          
+        } 
+      }               
     }       
   }
-  .logo {
-    display: flex;
-    height: 3rem; 
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    background: var(--logo-bg);
-    color: var(--logo-text);
-    &:hover {
-      .logo-text {           
-        color: var(--logo-text-hover);
-      }
-      .logo-no {
-        transition: var(--transition-speed);
-        color: var(--logo-no);
-      }
-    }
-    .logo-text {   
-      font-weight: bold;        
-      font-size: 1rem;
-      letter-spacing: 0.45ch;
-    } 
-    .logo-no {
-      font-size: 1.7rem; 
-      letter-spacing: -0.2ch;          
-    } 
-  }  
 }
 
 /* SMALL SCREENS */

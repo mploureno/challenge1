@@ -16,4 +16,5 @@ en:
     show: 
       edit: "Edit"
       delete: "Remove" 
+      back: "Back"
       confirmation: "Are you sure?"
