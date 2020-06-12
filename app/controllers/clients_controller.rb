@@ -9,7 +9,7 @@ class ClientsController < ApplicationController
   def show; end
 
   def new 
-    @client = current_user.clients.build
+    @client = current_user.clients.build    
   end
 
   def update

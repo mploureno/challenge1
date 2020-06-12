@@ -6,7 +6,7 @@
     <%= render 'shared/shim' %>
   </head>
   <body>
-    <% if !form %>
+    <% if current_user.present? %>
       <%= render 'shared/navbar' %>
     <% end %>
     <main>
