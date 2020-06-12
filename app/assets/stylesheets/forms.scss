@@ -3,9 +3,10 @@
   .field {
     height: 40px;
     width: 360px;
-    padding-left: 5px;
-    font-size: 14px;    
-    background-color: #A6ACAF;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;  
+    background-color: var(--ice);
     border: none;
     border-radius: 5px;
     outline: none;

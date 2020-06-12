@@ -1,32 +1,34 @@
-.btn {
+.submit-btn {
   height: 30px;
   width: 100%;
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: var(--btn);
-  color: var(--text-primary);
-  border: 1px solid var(--text-primary);
+  background-color: var(--lighter-gray);
+  color: var(--gray);
+  border: 1px solid var(--light-gray);
   border-radius: 5px;
   cursor: pointer;
-  transition: var(--transition-speed);
+  transition: var(--fast);
   &:hover {
-    background-color: var(--text-primary);
-    color: var(--logo-text-hover);
+    background-color: var(--light-gray);
+    color: var(--white);
   }
 }
 
-.btn-link {
-  font-size: 14px;
+.nav-btn {
+  font-size: 12px;
+  font-weight: bolder;
   text-decoration: none;
-  color: var(--text-primary);
+  color: var(--gray);
   &:hover {
-    color: var(--logo-text);
+    color: var(--black);
   }
 }
 
-.btn-card {
+.client-card-btn {
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid var(--text-primary);
+  border-top: 1px solid var(--light-gray);
 }

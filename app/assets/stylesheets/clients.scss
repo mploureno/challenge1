@@ -1,17 +1,18 @@
 .clients-list {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: var(--bg-nav);
+  color: var(--gray);
   .clients-list-card {
     width: 400px;
     margin-bottom: 0.8rem;
     padding-bottom: 5px;
-    border-bottom: 1px solid var(--text-primary);
+    border-bottom: 1px solid var(--light-gray);
     letter-spacing: 3.2px;
     font-size: 0.9rem;
-    transition: 0.3s;
+    transition: var(--fast);
     &:hover {
-      box-shadow: 0 0.4px var(--text-primary);
+      color: var(--dark-gray);
+      box-shadow: 0 0.4px var(--light-gray);
     }
   }  
 } 
@@ -21,11 +22,12 @@
   width: 400px;
   margin-bottom: 0.8rem;
   font-family: 'Roboto', sans-serif;
+  color: var(--dark-gray);
   text-align: center;
-  box-shadow: 0 4px 8px 0 var(--card-shadow);
-  transition: 0.3s;
+  box-shadow: 0 2px 4px 0 var(--dark-gray);
+  transition: var(--fast);
   &:hover {
-    box-shadow: 0 8px 16px 0 var(--card-shadow);
+    box-shadow: 0 4px 8px 0 var(--dark-gray);
   }
   .client-card-container {
     padding: 1rem;
@@ -33,8 +35,8 @@
 }
 
 @media (max-width: 650px) {
-  .clients-show {
-    .clients-card {
+  .clients-list {
+    .clients-list-card {
       width: 500px;
       font-size: 1.1rem; 
     }   
