@@ -1,15 +1,18 @@
-<h3><%= t('.header') %></h3>
+<h3 class="header"><%= t('.header') %></h3>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div>
+  <%= render 'shared/error_messages', object: resource %>
+  <div class="form">
     <%= f.email_field :email,
                       autofocus: true,
                       autocomplete: 'on',
-                      placeholder: t('.email') %>
+                      placeholder: t('.email'),
+                      class: 'field' %>
   </div>
-  <div>
+  <div class="form">
     <%= f.password_field :password,
                           autocomplete: 'off',
-                          placeholder: t('.password') %>
+                          placeholder: t('.password'),
+                          class: 'field' %>
   </div>
   <% if devise_mapping.rememberable? -%>
     <div>
@@ -18,10 +21,10 @@
     </div>
   <% end -%>
   <div>
-    <%= f.submit t('.submit') %>
+    <%= f.submit t('.submit'), class: 'btn' %>
   </div>
   <div>
     <p><%= t('.registrate') %></p>
-    <%= link_to t('.signup'), new_user_registration_path %>
+    <%= link_to t('.signup'), new_user_registration_path, class: 'btn-link' %>
   </div>
 <% end %>

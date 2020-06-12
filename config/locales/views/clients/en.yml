@@ -1,19 +1,20 @@
 en: 
   clients:
     form:
-      name: "Name"
-      last_name: "Last Name"
+      name: "first name"
+      last_name: "last name"
       email: "example@email.com"
-      phone: "(00) 00000-0000"
-      submit: "Save Client"
-    index:  
+      phone: "(xx) xxxx-xxxx"
+      submit: "Save"
+    index:
+      header: "Clients" 
     edit:
       header: "Edit"
-      back: "Cancel"  
+      back: "Cancel" 
     new:
       header: "New Client"
       back: "Cancel"
-    show: 
+    show:
       edit: "Edit"
       delete: "Remove" 
       back: "Back"

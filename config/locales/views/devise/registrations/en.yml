@@ -9,4 +9,5 @@ en:
         password: "Password"
         password_confirmation: "Confirm Password"
         signup: "Join"
+        back: "Already member?"
         

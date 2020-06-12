@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;	
+}
 
-  /* ### variables ### */
+:root {
+  /* default font setup */
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  /* variables */
   --text-primary: #7F8C8D;
   --text-secondary: #B7950B;
   --logo-text: #424949;
@@ -13,15 +18,9 @@
   --bg-primary: #ECF0F1;
   --bg-secondary: #D0D3D4;
   --bg-nav: #2D2D2B;
-  --btn-inactive: #424949;
-  --btn-active: #2D2D2B;
+  --btn: #D0D3D4;
   --card-shadow: #2D2D2B;
-  --transition-speed: 750ms;	
-}
-
-:root {
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
+  --transition-speed: 750ms;
 }
 
 body::-webkit-scrollbar {

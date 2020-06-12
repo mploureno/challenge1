@@ -1,6 +1,7 @@
+<h3 class="header"><%= t('.header') %></h3>
 <% @clients.each do |client| %>
-  <%= link_to client_path(client), class:'clients-show' do %>
-    <div class="clients-card">
+  <%= link_to client_path(client), class:'clients-list' do %>
+    <div class="clients-list-card">
       <div class="clients-card-container">
         <h3><%= "#{ client.first_name } #{client.last_name}" %></h3>
       </div>
