@@ -4,15 +4,15 @@
     <h5><%= @client.email %></h5>
     <h5><%= @client.mobile_phone %></h5>
   </div>
-  <div class="btn-card">
+  <div class="client-card-btn">
     <%= link_to t('.edit'), edit_client_path, 
-                            class: 'btn-link' %>
+                            class: 'nav-btn' %>
     <%= link_to t('.delete'), client_path(@client), 
-                              class: 'btn-link', 
+                              class: 'nav-btn', 
                               method: :delete, 
                               data: { confirm: t('.confirmation') } %>
 
     <%= link_to t('.back'), clients_path, 
-                            class: 'btn-link' %>
+                            class: 'nav-btn' %>
   </div>                            
 </div>  
