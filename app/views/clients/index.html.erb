@@ -1,4 +1,7 @@
 <h3 class="header"><%= t('.header') %></h3>
+<% if !Client.exists? %>
+  <p class="header"><%= t('.empty') %></p>
+<% end %>
 <% @clients.each do |client| %>
   <%= link_to client_path(client), class:'clients-list' do %>
     <div class="clients-list-card">
