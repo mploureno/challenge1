@@ -4,9 +4,9 @@
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: var(--lighter-gray);
+  background-color: var(--ice);
   color: var(--gray);
-  border: 1px solid var(--light-gray);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: var(--fast);
@@ -32,3 +32,5 @@
   justify-content: space-evenly;
   border-top: 1px solid var(--light-gray);
 }
+
+
