@@ -1,8 +1,7 @@
 en: 
   shared:
     navbar:
-      sign_out: "Sign Out"
-      add_client: "Add"
+      sign_out: "Signout"
       list_clients: "Clients"
     error_messages: 
       validation_failed: "Sorry"
