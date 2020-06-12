@@ -1,0 +1,15 @@
+.header {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;  
+  font-weight: lighter;
+  text-align: center;
+}
+
+.errors {
+  margin-bottom: 6px;
+  font-size: 12px;
+  p { font-size: 1rem; }
+  ul { list-style: none; }
+}

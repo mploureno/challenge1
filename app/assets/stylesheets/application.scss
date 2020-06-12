@@ -1,8 +1,11 @@
 @import "navbar";
 @import "selectors";
 @import "clients";
-@import "form";
+@import "forms";
+@import "text";
+@import "buttons";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body { 
   display: flex;
