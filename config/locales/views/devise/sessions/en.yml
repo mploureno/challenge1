@@ -5,6 +5,7 @@ en:
         header: "Login"
         email: "example@email.com"
         password: "Password"
+        remember: "Remember me"
         submit: "Go"
         registrate: "Not a member yet?"
         signup: "Join!"
