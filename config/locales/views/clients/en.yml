@@ -1,8 +1,8 @@
 en: 
   clients:
     form:
-      name: "first name"
-      last_name: "last name"
+      name: "First name"
+      last_name: "Last name"
       email: "example@email.com"
       phone: "(xx) xxxx-xxxx"
       submit: "Save"
