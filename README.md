@@ -1,24 +1,27 @@
-# README
+# Challenge#1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web app done to meet a little RoR challenge set by a friend... a pro friend :sunglasses:
 
-Things you may want to cover:
+#### Requirements
 
-* Ruby version
+- Ruby 2.6.3
+- Rails 5.2.3
+- PostgreSQL 9.5+
 
-* System dependencies
+#### Setup
 
-* Configuration
+To get all running run:
+ ```shell
+ bundle
+ ```
 
-* Database creation
+Setup `config/database.yml` then run:
+```shell
+ rails db:create 
+ rake db:migrate
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Test your configuration:
+```shell
+ rails s 
+```
