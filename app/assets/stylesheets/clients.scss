@@ -2,7 +2,7 @@
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: var(--gray);
-  .clients-list-card {
+  .clients-list-item {
     width: 400px;
     margin-bottom: 0.8rem;
     padding-bottom: 5px;
@@ -14,13 +14,13 @@
       color: var(--dark-gray);
       box-shadow: 0 0.4px var(--light-gray);
     }
-  }  
-} 
+  }
+}
 
 .client-card {
   height: 460px;
   width: 400px;
-  margin-bottom: 0.8rem;
+  margin-top: 10%;
   font-family: 'Roboto', sans-serif;
   color: var(--dark-gray);
   text-align: center;
@@ -30,15 +30,31 @@
     box-shadow: 0 4px 8px 0 var(--dark-gray);
   }
   .client-card-container {
+    height: 100%;
     padding: 1rem;
+    position: relative;
+    .card-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+    .card-btn {
+      margin-top: 400px;
+      padding: 0.6rem;
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 1px solid var(--light-gray);
+    }      
   }
 }
 
 @media (max-width: 650px) {
   .clients-list {
+    padding: 3rem;
     .clients-list-card {
       width: 500px;
       font-size: 1.1rem; 
-    }   
-  } 
+    }
+  }
 }

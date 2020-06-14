@@ -1,18 +1,20 @@
 <div class="client-card">
   <div class="client-card-container">
-    <h3><%= "#{ @client.first_name } #{ @client.last_name }" %></h3>
-    <h5><%= @client.email %></h5>
-    <h5><%= @client.mobile_phone %></h5>
-  </div>
-  <div class="client-card-btn">
-    <%= link_to t('.edit'), edit_client_path, 
-                            class: 'nav-btn' %>
-    <%= link_to t('.delete'), client_path(@client), 
-                              class: 'nav-btn', 
-                              method: :delete, 
-                              data: { confirm: t('.confirmation') } %>
+    <div class="card-text">  
+      <h3><%= "#{ @client.first_name } #{ @client.last_name }" %></h3>
+      <h5><%= @client.email %></h5>
+      <h5><%= @client.mobile_phone %></h5>
+    </div>  
+    <div class="card-btn">
+      <%= link_to t('.edit'), edit_client_path, 
+                              class: 'nav-btn' %>
+      <%= link_to t('.delete'), client_path(@client), 
+                                class: 'nav-btn', 
+                                method: :delete, 
+                                data: { confirm: t('.confirmation') } %>
 
-    <%= link_to t('.back'), clients_path, 
-                            class: 'nav-btn' %>
-  </div>                            
+      <%= link_to t('.back'), clients_path, 
+                              class: 'nav-btn' %>
+    </div>
+  </div>                              
 </div>  

@@ -1,29 +1,31 @@
-<%= form_for(client, url: url) do |f| %>
-  <%= render 'shared/error_messages', object: client %>
-  <div class="form">
-    <%= f.text_field :first_name,
-                    autofocus:true,
-                    autocomplete: 'on',
-                    placeholder: t('.name'), 
-                    class: 'field' %>
-  </div>
-  <div class="form">
-    <%= f.text_field :last_name,
-                    autocomplete: 'on',
-                    placeholder: t('.last_name'), 
-                    class: 'field' %>
-  </div>
-  <div class="form">
-    <%= f.email_field :email,
-                    autocomplete: 'on',
-                    placeholder: t('.email'),
-                    class: 'field' %>
-  </div>
-  <div class="form">
-    <%= f.text_field :mobile_phone,
-                    autocomplete: 'on',
-                    placeholder: t('.phone'),
-                    class: 'field' %>
-  </div>
-  <%= f.submit t('.submit'), class: 'submit-btn'%>
-<% end %> 
+<div class="form-container">
+  <%= form_for(client, url: url) do |f| %>
+    <%= render 'shared/error_messages', object: client %>
+    <div class="form">
+      <%= f.text_field :first_name,
+                      autofocus:true,
+                      autocomplete: 'on',
+                      placeholder: t('.name'), 
+                      class: 'field' %>
+    </div>
+    <div class="form">
+      <%= f.text_field :last_name,
+                      autocomplete: 'on',
+                      placeholder: t('.last_name'), 
+                      class: 'field' %>
+    </div>
+    <div class="form">
+      <%= f.email_field :email,
+                      autocomplete: 'on',
+                      placeholder: t('.email'),
+                      class: 'field' %>
+    </div>
+    <div class="form">
+      <%= f.text_field :mobile_phone,
+                      autocomplete: 'on',
+                      placeholder: t('.phone'),
+                      class: 'field' %>
+    </div>
+    <%= f.submit t('.submit'), class: 'submit-btn'%>
+  <% end %> 
+</div>
