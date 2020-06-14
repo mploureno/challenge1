@@ -10,7 +10,7 @@ This is a web app done to meet a little RoR challenge set by a friend... a pro f
 
 #### Setup
 
-To get all running run:
+To get all running do the following:
  ```shell
  bundle
  ```
