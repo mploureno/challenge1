@@ -1,18 +1,18 @@
 .clients-list {
-  font-family: 'Roboto', sans-serif;
+  font: 100% $roboto-font-stack;
   text-decoration: none;
-  color: var(--gray);
+  color: $gray;
   .clients-list-item {
     width: 400px;
     margin-bottom: 0.8rem;
     padding-bottom: 5px;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid $light-gray;
     letter-spacing: 3.2px;
     font-size: 0.9rem;
-    transition: var(--fast);
+    transition: $fast;
     &:hover {
-      color: var(--dark-gray);
-      box-shadow: 0 0.4px var(--light-gray);
+      color: $dark-gray;
+      box-shadow: 0 0.4px $light-gray;
     }
   }
 }
@@ -21,13 +21,13 @@
   height: 460px;
   width: 400px;
   margin-top: 10%;
-  font-family: 'Roboto', sans-serif;
-  color: var(--dark-gray);
+  font: 100% $roboto-font-stack;
+  color: $dark-gray;
   text-align: center;
-  box-shadow: 0 2px 4px 0 var(--dark-gray);
+  box-shadow: 0 2px 4px 0 $dark-gray;
   transition: var(--fast);
   &:hover {
-    box-shadow: 0 4px 8px 0 var(--dark-gray);
+    box-shadow: 0 4px 8px 0 $dark-gray;
   }
   .client-card-container {
     height: 100%;
@@ -44,7 +44,7 @@
       padding: 0.6rem;
       display: flex;
       justify-content: space-evenly;
-      border-top: 1px solid var(--light-gray);
+      border-top: 1px solid $light-gray;
     }      
   }
 }

@@ -4,15 +4,15 @@
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: var(--ice);
-  color: var(--gray);
+  background-color: $ice;
+  color: $gray;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: var(--fast);
+  transition: $fast;
   &:hover {
-    background-color: var(--light-gray);
-    color: var(--white);
+    background-color: $light-gray;
+    color: $white;
   }
 }
 
@@ -20,9 +20,9 @@
   font-size: 12px;
   font-weight: bolder;
   text-decoration: none;
-  color: var(--gray);
+  color: $gray;
   &:hover {
-    color: var(--black);
+    color: $black;
   }
 }
 

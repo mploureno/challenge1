@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  transition: width var(--fast) ease;
+  transition: width $fast ease;
   .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -16,16 +16,16 @@
         svg {
           min-width: 1.5rem;
           margin-left: 0.75rem;
-          color: var(--light-gray);
+          color: $light-gray;
         }  
         .link-text {
           display: none;
           margin-left: 1rem; 
           font-size: 0.8rem;
-          color: var(--gray); 
+          color: $gray; 
         }
         &:hover { 
-          svg { color: var(--ice); }
+          svg { color: $ice; }
         }  
       }
       .logo {
@@ -37,13 +37,13 @@
         text-decoration: none;
         text-transform: uppercase;
         margin-bottom: 0.6rem;
-        background: var(--black);
-        color: var(--gray);
+        background: $black;
+        color: $gray;
         &:hover {
-          .logo-text { color: var(--white); }
+          .logo-text { color: $white; }
           .logo-no {
-            transition: var(--slow);
-            color: var(--yellow);
+            transition: $slow;
+            color: $yellow;
           }
         }
         .logo-text {   
@@ -67,7 +67,7 @@
     width: 100vw;
     height: 3.8rem;
     .navbar-nav {
-      background: var(--dark-gray);
+      background: $dark-gray;
       flex-direction: row;
       align-items: center;
       .nav-item {
@@ -93,7 +93,7 @@
     top: 0;
     width: 3rem;
     height: 100vh;
-    background-color: var(--dark-gray);    
+    background-color: $dark-gray;    
     .nav-item { 
       .nav-link {
         &:hover {

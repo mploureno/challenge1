@@ -1,5 +1,5 @@
+@import "variables";
 @import "navbar";
-@import "selectors";
 @import "clients";
 @import "forms";
 @import "text";
@@ -7,10 +7,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;	
+}
+
 body { 
   height: 100vh;
   display: flex;
-  background: var(--lighter-gray);
+  background: $lighter-gray;
+  font: 100% $ubuntu-font-stack;
+}
+
+body::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.43rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $dark-yellow;
 }
 
 main {

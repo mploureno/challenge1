@@ -6,9 +6,9 @@
       height: 40px;
       width: 360px;
       padding-left: 10px;
-      font-family: 'Roboto', sans-serif;
+      font: 100% $roboto-font-stack;
       font-size: 14px;  
-      background-color: var(--ice);
+      background-color: $ice;
       border-radius: 5px;
       border: none;
       outline: none;
