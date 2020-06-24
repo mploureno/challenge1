@@ -2,7 +2,7 @@
   height: 30px;
   width: 100%;
   margin-bottom: 10px;
-  font-family: 'Roboto', sans-serif;
+  font: 100% $roboto-font-stack;
   font-size: 14px;
   background-color: $ice;
   color: $gray;
@@ -25,6 +25,3 @@
     color: $black;
   }
 }
-
-
-

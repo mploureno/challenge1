@@ -1,0 +1,21 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin scrollbars($height, $width, $bar, $background) {
+
+  &::-webkit-scrollbar {
+    height: $height;
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $bar;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background;
+  }
+}

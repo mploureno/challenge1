@@ -1,3 +1,4 @@
+@import "mixins";
 @import "variables";
 @import "navbar";
 @import "clients";
@@ -7,30 +8,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;	
-}
-
 body { 
-  height: 100vh;
+  margin: 0;
   display: flex;
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
+  @include scrollbars(.5em, .43em, $dark-yellow, $black);
 }
 
-body::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 0.43rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: $black;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: $dark-yellow;
+ul {
+  @include reset-list;
 }
 
 main {
@@ -40,6 +27,6 @@ main {
 
 @media (max-width: 650px) {
   main {
-    margin-top: 0;  
+    margin-top: 0;
   }
 }

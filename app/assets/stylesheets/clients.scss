@@ -4,8 +4,6 @@
   color: $gray;
   .clients-list-item {
     width: 400px;
-    margin-bottom: 0.8rem;
-    padding-bottom: 5px;
     border-bottom: 1px solid $light-gray;
     letter-spacing: 3.2px;
     font-size: 0.9rem;
@@ -25,7 +23,7 @@
   color: $dark-gray;
   text-align: center;
   box-shadow: 0 2px 4px 0 $dark-gray;
-  transition: var(--fast);
+  transition: $fast;
   &:hover {
     box-shadow: 0 4px 8px 0 $dark-gray;
   }
@@ -45,7 +43,7 @@
       display: flex;
       justify-content: space-evenly;
       border-top: 1px solid $light-gray;
-    }      
+    }
   }
 }
 
@@ -54,7 +52,7 @@
     padding: 3rem;
     .clients-list-card {
       width: 500px;
-      font-size: 1.1rem; 
+      font-size: 1.1rem;
     }
   }
 }
