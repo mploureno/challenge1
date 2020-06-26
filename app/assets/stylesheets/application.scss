@@ -1,32 +1,32 @@
-@import "mixins";
-@import "variables";
-@import "navbar";
-@import "clients";
-@import "forms";
-@import "text";
-@import "buttons";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import 
+  "abstracts/mixins",
+  "abstracts/variables";
 
-body { 
-  margin: 0;
-  display: flex;
-  background: $lighter-gray;
-  font: 100% $ubuntu-font-stack;
-  @include scrollbars(.5em, .43em, $dark-yellow, $black);
-}
+@import 
+  "base/base";
 
-ul {
-  @include reset-list;
-}
+@import
+  "components/buttons",
+  "components/text";
 
-main {
-  margin: 3rem auto;
-  padding: 1rem;
-}
+@import 
+  "layout/navbar",
+  "layout/forms";
 
-@media (max-width: 650px) {
+@import 
+  "pages/clients";
+
+@import 
+  url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'),
+  url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
   main {
-    margin-top: 0;
+    margin: 3rem auto;
+    padding: 1rem;
   }
-}
+  
+  @media (max-width: 650px) {
+    main {
+      margin-top: 0;
+    }
+  }
