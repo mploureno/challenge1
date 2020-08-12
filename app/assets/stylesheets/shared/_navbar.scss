@@ -1,6 +1,9 @@
 .navbar {
   position: fixed;
   transition: width $fast ease;
+  width: 3rem;
+  height: 100vh;
+  background-color: $dark-gray;
   .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -8,6 +11,7 @@
     list-style: none;
     .nav-item {
       width: 100%;
+      &:last-child { margin-top: auto; }
       .nav-link {
         display: flex;
         align-items: center;
@@ -17,20 +21,21 @@
           min-width: 1.5rem;
           margin-left: 0.75rem;
           color: $light-gray;
-        }  
+        }
         .link-text {
           display: none;
-          margin-left: 1rem; 
+          margin-left: 1rem;
           font-size: 0.8rem;
-          color: $gray; 
+          color: $gray;
         }
         &:hover { 
           svg { color: $ice; }
-        }  
+          .link-text { display: inline; }
+        }
       }
       .logo {
         display: flex;
-        height: 3rem; 
+        height: 3rem;
         width: 100vw;
         justify-content: center;
         align-items: center;
@@ -46,22 +51,22 @@
             color: $yellow;
           }
         }
-        .logo-text {   
-          font-weight: bold;          
-          font-size: 0.8rem; 
+        .logo-text {
+          font-weight: bold;
+          font-size: 0.8rem;
           letter-spacing: 0.45ch;
-        } 
+        }
         .logo-no {
-          font-size: 1.7rem; 
-          letter-spacing: -0.2ch;          
-        } 
-      }               
-    }       
+          font-size: 1.7rem;
+          letter-spacing: -0.2ch;
+        }
+      }
+    }
   }
 }
 
 /* SMALL SCREENS */
-@media (max-width: 650px) {
+@media (max-width: 991px) {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -77,36 +82,12 @@
             display: none;
           }
         }
-        &:first-child { display: none; }   	
-      }       
-    }       
+        &:first-child { display: none; }
+      }
+    }
   }
 
   main {
     margin: 0;
-  }
-}
-
-/* LARGE SCREENS */
-@media (min-width: 650px) {
-  .navbar {
-    top: 0;
-    width: 3rem;
-    height: 100vh;
-    background-color: $dark-gray;    
-    .nav-item { 
-      .nav-link {
-        &:hover {
-          .link-text {
-            display: inline; 
-          }
-        }
-      }
-      &:last-child { margin-top: auto; }
-    }    
-  }
-  
-  main {
-    margin-left: 10rem;
   }
 }
