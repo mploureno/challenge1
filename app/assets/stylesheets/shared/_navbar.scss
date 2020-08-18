@@ -78,11 +78,15 @@
       .nav-item {
         .nav-link {
           justify-content: space-evenly;
-          .link-text {
-            display: none;
+          &:hover {
+            .link-text {
+              display: none;
+            }
           }
         }
-        &:first-child { display: none; }
+        &:first-child {
+          display: none;
+        }
       }
     }
   }
