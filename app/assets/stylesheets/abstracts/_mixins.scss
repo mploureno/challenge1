@@ -4,6 +4,13 @@
   list-style: none;
 }
 
+@mixin center-it {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin scrollbars($height, $width, $bar, $background) {
 
   &::-webkit-scrollbar {

@@ -13,8 +13,7 @@ body {
   font: 100% $ubuntu-font-stack;
   @include scrollbars(0.5em, 0.43em, $dark-yellow, $black);
   main {
-    margin: 3rem auto;
-    padding: 1rem;
+    @include center-it;
   }
   @media (max-width: 650px) {
     main {
