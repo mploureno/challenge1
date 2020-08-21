@@ -19,7 +19,7 @@
         height: 4rem;
         text-decoration: none;
         svg {
-          min-width: 1.5rem;
+          min-width: 26px;
           margin-left: 0.75rem;
           color: $light-gray;
         }
@@ -78,7 +78,7 @@
       align-items: center;
       .nav-item {
         .nav-link {
-          justify-content: space-evenly;
+          justify-content: space-around;
           &:hover {
             .link-text {
               display: none;

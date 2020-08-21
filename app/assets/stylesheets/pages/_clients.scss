@@ -6,7 +6,7 @@
     width: 400px;
     border-bottom: 1px solid $light-gray;
     letter-spacing: 3.2px;
-    font-size: 0.9rem;
+    font-size: 1em;
     transition: $fast;
     &:hover {
       color: $dark-gray;
@@ -47,12 +47,20 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 991px) {
   .clients-list {
-    padding: 3rem;
+    padding: 48px;
     .clients-list-item {
-      width: 400px;
       font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .clients-list {
+    
+    .clients-list-item {
+      width: 300px;
     }
   }
 }
