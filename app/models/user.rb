@@ -1,6 +1,8 @@
 class User < ApplicationRecord
-  has_many :clients 
+  validates :first_name, presence: true
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  has_many :clients 
 end
