@@ -1,9 +1,9 @@
 class ClientsController < ApplicationController
-  before_action :find_client, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  before_action :fetch_client, only: %i[edit show update destroy]
 
   def index
-    @clients = Client.all.order("created_at DESC")
+    @clients = current_user.clients.order("created_at DESC")
   end
 
   def show; end
@@ -36,6 +36,10 @@ class ClientsController < ApplicationController
 
   private
 
+  def fetch_client
+    @client = current_user.clients.find(params[:id])
+  end
+
   def client_params
     params.require(:client).permit(
       :first_name,
@@ -43,9 +47,5 @@ class ClientsController < ApplicationController
       :email,
       :mobile_phone
     )
-  end
-
-  def find_client
-    @client = Client.find(params[:id])
   end
 end
