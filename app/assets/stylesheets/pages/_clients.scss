@@ -4,6 +4,8 @@
   color: $gray;
   .clients-list-item {
     width: 400px;
+    display: flex;
+    gap: 5px;
     border-bottom: 1px solid $light-gray;
     letter-spacing: 3.2px;
     font-size: 1em;
