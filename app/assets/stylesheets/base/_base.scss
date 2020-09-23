@@ -1,4 +1,6 @@
-* {
+*,
+::before,
+::after {
   box-sizing: inherit;
 }
 
@@ -8,12 +10,12 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
   @include scrollbars(0.5em, 0.43em, $dark-yellow, $black);
   main {
-    max-height: 90vh;
     @include center-it;
   }
   @media (max-width: 650px) {

@@ -1,12 +1,14 @@
-<h3 class="header"><%= t('.header') %></h3>
-<% unless Client.exists? %>
-  <p class="header"><%= t('.empty') %></p>
-<% end %>
-<% @clients.each do |client| %>
-  <%= link_to client_path(client), class:'clients-list' do %>
-    <div class="clients-list-item">
-      <p><%= client.first_name %></p>
-      <p><%= client.last_name %></p>
-    </div>
+<div class="clients-list">
+  <h3 class="header"><%= t('.header') %></h3>
+  <% unless Client.exists? %>
+    <p class="header"><%= t('.empty') %></p>
   <% end %>
-<% end %>
+  <% @clients.each do |client| %>
+    <%= link_to client_path(client) do %>
+      <div class="clients-list-item">
+        <p><%= client.first_name %></p>
+        <p><%= client.last_name %></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>

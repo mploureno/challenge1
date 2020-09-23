@@ -1,13 +1,15 @@
 .clients-list {
-  font: 100% $roboto-font-stack;
-  text-decoration: none;
+  width: 80%;
+  min-width: 300px;
+  @include center-it;
+  font: 100% $ubuntu-font-stack;
   color: $gray;
   .clients-list-item {
-    width: 400px;
+    max-width: 100%;
     display: flex;
     gap: 5px;
     border-bottom: 1px solid $light-gray;
-    letter-spacing: 3.2px;
+    letter-spacing: .5ch;
     font-size: 1em;
     transition: $fast;
     &:hover {
@@ -18,10 +20,10 @@
 }
 
 .client-card {
+  @include center-it;
   height: 460px;
   width: 400px;
-  margin-top: 10%;
-  font: 100% $roboto-font-stack;
+  font: 100% $ubuntu-font-stack;
   color: $dark-gray;
   text-align: center;
   box-shadow: 0 2px 4px 0 $dark-gray;
@@ -34,10 +36,7 @@
     padding: 1rem;
     position: relative;
     .card-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -100%);
+      @include center-it;
     }
     .card-btn {
       margin-top: 400px;
@@ -60,7 +59,6 @@
 
 @media (max-width: 375px) {
   .clients-list {
-    
     .clients-list-item {
       width: 300px;
     }
