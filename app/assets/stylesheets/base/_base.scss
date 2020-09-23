@@ -16,6 +16,8 @@ body {
   font: 100% $ubuntu-font-stack;
   @include scrollbars(0.5em, 0.43em, $dark-yellow, $black);
   main {
+    height: 90%;
+    width: 100%;
     @include center-it;
   }
   @media (max-width: 650px) {
@@ -27,4 +29,9 @@ body {
 
 ul {
   @include reset-list;
+}
+
+a {
+  color: #2b2b2b;
+  text-decoration: none;
 }

@@ -1,7 +1,9 @@
 .clients-list {
-  width: 80%;
-  min-width: 300px;
+  width: 100vw;
+  max-width: 600px;
   @include center-it;
+  position: absolute;
+  top: 25%;
   font: 100% $ubuntu-font-stack;
   color: $gray;
   .clients-list-item {
@@ -9,12 +11,10 @@
     display: flex;
     gap: 5px;
     border-bottom: 1px solid $light-gray;
-    letter-spacing: .5ch;
-    font-size: 1em;
+    letter-spacing: .6ch;
     transition: $fast;
     &:hover {
-      color: $dark-gray;
-      box-shadow: 0 0.4px $light-gray;
+      opacity: .5;
     }
   }
 }
