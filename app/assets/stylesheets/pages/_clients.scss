@@ -3,7 +3,7 @@
   width: 100vw;
   max-width: 600px;
   position: absolute;
-  top: 25%;
+  top: 45%;
   font: 100% $ubuntu-font-stack;
   color: $gray;
   .clients-list-item {
@@ -11,6 +11,7 @@
     display: flex;
     gap: 5px;
     border-bottom: 1px solid $light-gray;
+    font-size: 1.5rem;
     letter-spacing: .6ch;
     transition: $fast;
     &:hover {
@@ -52,7 +53,7 @@
   .clients-list {
     padding: 48px;
     .clients-list-item {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
   }
 }

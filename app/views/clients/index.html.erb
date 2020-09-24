@@ -1,5 +1,5 @@
+<h3 class="header"><%= t('.header') %></h3>
 <div class="clients-list">
-  <h3 class="header"><%= t('.header') %></h3>
   <% unless Client.exists? %>
     <p class="header"><%= t('.empty') %></p>
   <% end %>
