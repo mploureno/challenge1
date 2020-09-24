@@ -1,5 +1,5 @@
+<h3 class="header"><%= t('.header') %></h3>
 <div class="form-container">
-  <h3 class="header"><%= t('.header') %></h3>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render 'shared/error_messages', object: resource %>
     <div class="form">

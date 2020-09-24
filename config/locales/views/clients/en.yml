@@ -6,15 +6,14 @@ en:
       email: "example@email.com"
       phone: "(xx) xxxx-xxxx"
       submit: "Save"
+      back: "Cancel"
     index:
       header: "Clients"
       empty: "List Empty" 
     edit:
       header: "Edit"
-      back: "Cancel" 
     new:
       header: "New Client"
-      back: "Cancel"
     show:
       edit: "Edit"
       delete: "Remove" 

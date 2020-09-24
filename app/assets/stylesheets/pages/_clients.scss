@@ -1,7 +1,7 @@
 .clients-list {
+  @include center-it;
   width: 100vw;
   max-width: 600px;
-  @include center-it;
   position: absolute;
   top: 25%;
   font: 100% $ubuntu-font-stack;

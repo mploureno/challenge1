@@ -1,13 +1,16 @@
 .form-container {
-  margin-top: 4rem;
+  @include center-it;
+  width: 360px;
+  padding: 1rem;
   .form {
     margin-bottom: 5px;
     .field {
       height: 40px;
-      width: 360px;
+      width: 100%;
       padding-left: 10px;
-      font: 100% $roboto-font-stack;
-      font-size: 14px;  
+      font: 100% $ubuntu-font-stack;
+      font-size: 14px;
+      text-align: center;  
       background-color: $ice;
       border-radius: 5px;
       border: none;
@@ -29,11 +32,5 @@
   }
   .label {
     font-size: 0.8rem;
-  }
-}  
-
-@media (max-width: 650px) {
-  .form-container {
-    margin-top: 7rem;
   }
 }
