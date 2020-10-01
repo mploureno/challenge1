@@ -7,10 +7,9 @@
   <% end %>
   <% @clients.each do |client| %>
     <%= link_to client_path(client) do %>
-      <div class="clients-list-item">
-        <p><%= client.first_name %></p>
-        <p><%= client.last_name %></p>
-      </div>
+      <ul class="clients-list-item">
+        <li><%= "#{client.first_name} #{client.last_name}" %></li>
+      </ul>
     <% end %>
   <% end %>
 </div>

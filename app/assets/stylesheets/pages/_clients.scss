@@ -6,8 +6,9 @@
   top: 45%;
   font: 100% $ubuntu-font-stack;
   color: $gray;
-  .clients-list-item {
+  .clients-list-item > li {
     max-width: 100%;
+    margin-bottom: 1rem;
     display: flex;
     gap: 5px;
     border-bottom: 1px solid $light-gray;
@@ -52,7 +53,7 @@
 @media (max-width: 991px) {
   .clients-list {
     padding: 48px;
-    .clients-list-item {
+    .clients-list-item > li {
       font-size: 1.4rem;
     }
   }
@@ -60,7 +61,7 @@
 
 @media (max-width: 375px) {
   .clients-list {
-    .clients-list-item {
+    .clients-list-item > li {
       width: 270px;
     }
   }
