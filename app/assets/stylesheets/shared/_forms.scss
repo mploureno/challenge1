@@ -1,13 +1,14 @@
-.form-container {
+.form {
   @include center-it;
   width: 360px;
   padding: 1rem;
-  .form {
+
+  &__group {
     margin-bottom: 5px;
-    .field {
+
+    &__input {
       height: 40px;
       width: 100%;
-      padding-left: 10px;
       font: 100% $ubuntu-font-stack;
       font-size: 14px;
       text-align: center;  
@@ -16,21 +17,25 @@
       border: none;
       outline: none;
     }
-    .label {
+  
+    &__label {
       font-size: 14px;
     }
   }
 }
+
 .remember {
   margin: 10px 0;
   display: flex;
-  .checkbox {
+
+  &__checkbox {
     height: 15px;
     width: 12px;
     margin: 0 8px;
     cursor: pointer;
   }
-  .label {
+
+  &__input {
     font-size: 0.8rem;
   }
 }

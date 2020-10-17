@@ -1,31 +1,31 @@
 <h3 class="header"><%= t('.header') %></h3>
-<div class="form-container">
+<div class="form">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render 'shared/error_messages', object: resource %>
-    <div class="form">
+    <div class="form__group">
       <%= f.email_field :email,
                         autofocus: true,
                         autocomplete: 'on',
                         placeholder: t('.email'),
-                        class: 'field' %>
+                        class: 'form__group__input' %>
     </div>
-    <div class="form">
+    <div class="form_group">
       <%= f.password_field :password,
                             autocomplete: 'off',
                             placeholder: t('.password'),
-                            class: 'field' %>
+                            class: 'form__group__input' %>
     </div>
     <% if devise_mapping.rememberable? -%>
       <div class="remember">
-        <%= f.check_box :remember_me, class: 'checkbox' %>
-        <%= f.label :remember_me, t('.remember'), class: 'label' %>
+        <%= f.check_box :remember_me, class: 'remeber__checkbox' %>
+        <%= f.label :remember_me, t('.remember'), class: 'form__group__label' %>
       </div>
     <% end -%>
-    <div class="form">
+    <div class="form__group">
       <%= f.submit t('.submit'), class: 'submit-btn' %>
     </div>
-    <div class="form">
-      <p class="label"><%= t('.registrate') %></p>
+    <div class="form__group">
+      <p class="form__group__label"><%= t('.registrate') %></p>
       <%= link_to t('.signup'), new_user_registration_path, class: 'nav-btn' %>
     </div>
   <% end %>
