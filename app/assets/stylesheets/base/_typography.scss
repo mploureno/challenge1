@@ -8,7 +8,8 @@
 }
 
 .clients-list {
-  .empty-list {
+
+  &__empty {
     width: 100%;
     padding: 2rem;
     color: $gray;
@@ -24,7 +25,6 @@
   background-color: $ice;
   font-size: 12px;
   p { font-size: 1rem; }
-  ul { list-style: none; }
 }
 
 @media (max-width: 375px) {
