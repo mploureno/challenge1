@@ -1,6 +1,6 @@
+<%= render 'shared/error_messages', object: client %>
 <div class="form">
   <%= form_for(client, url: url) do |f| %>
-    <%= render 'shared/error_messages', object: client %>
     <div class="form__group">
       <%= f.text_field :first_name,
                       autofocus:true,

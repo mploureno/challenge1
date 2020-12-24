@@ -1,10 +1,13 @@
-<div class="alert">
-  <% if object.errors.any? %>
-    <p><%= t('.validation_failed') %></p>
-    <ul>
-      <% object.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  <% end %>
-</div>
+<% if object.errors.any? %>
+  <div class="popup">
+    <h2><%= t('.validation_failed') %></h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <ul>
+        <% object.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
