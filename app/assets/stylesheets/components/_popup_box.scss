@@ -4,8 +4,7 @@
   padding: 20px;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 5%;
   background: #fff;
   border-radius: 5px;
   transition: all 5s ease-in-out;
@@ -17,6 +16,7 @@
   }
 
   .close {
+    margin-top: -50px;
     float: right;
     transition: all 200ms;
     font-size: 30px;
