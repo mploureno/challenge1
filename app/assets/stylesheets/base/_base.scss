@@ -1,6 +1,3 @@
-/**
- * 1. Set up a decent box model on the root element.
- */
 html {
   box-sizing: border-box;
 }
@@ -11,17 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-/**
- * 1. Reset default margin
- * 2. Prevent horizontal scrolling
-*/
 body {
-  margin: 0; /* 1 */
-  color: #444;
   display: flex;
+  color: #444;
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
-  overflow-x: hidden; /* 2 */
+  overflow-x: hidden;
   @include scrollbar(0.5em, 0.43em, $dark-yellow, $black);
 
   main {
@@ -35,15 +27,4 @@ body {
       margin-top: 0;
     }
   }
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }

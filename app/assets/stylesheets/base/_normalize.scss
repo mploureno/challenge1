@@ -90,8 +90,10 @@ hr {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 
-a {
+a {  
+  color: inherit;
   background-color: transparent; /* 1 */
+  text-decoration: none;
   -webkit-text-decoration-skip: objects; /* 2 */
 }
 
@@ -132,6 +134,15 @@ small {
   font-size: 80%;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li { 
+  padding: 0;
+}
 
 /* Embedded content
    ========================================================================== */
