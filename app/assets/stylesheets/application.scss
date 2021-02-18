@@ -10,12 +10,12 @@
   "base/typography";
 
 @import
-  "components/buttons",
-  "components/popup_box";
-
-@import
   "layouts/navbar",
   "layouts/forms";
+
+@import
+  "components/buttons",
+  "components/popup_box";
 
 @import
   "pages/clients";
