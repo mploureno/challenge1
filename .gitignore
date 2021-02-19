@@ -29,6 +29,8 @@
 /config/master.key
 # Ignore application configuration
 /config/application.yml
-#Ignore simplecov coverage results
+# Ignore simplecov coverage results
 coverage
 
+# Ignore generated css
+/app/assets/stylesheets/css
