@@ -1,65 +1,41 @@
 .navbar {
-  width: 3rem;
-  height: 100vh;
-  position: fixed;
+  grid-area: nav;
   z-index: 1;
   transition: width $fast ease;
   background-color: $dark-gray;
+
   .navbar-nav {
     display: flex;
     flex-direction: column;
     height: 100%;
     list-style: none;
+
     .nav-item {
-      width: 100%;
-      &:last-child { margin-top: auto; }
+
+      &:nth-child(2) { margin-top: auto; }
+
       .nav-link {
         display: flex;
         align-items: center;
         height: 4rem;
         text-decoration: none;
+
         svg {
-          min-width: 26px;
+          width: 30px;
           margin-left: 0.75rem;
           color: $light-gray;
         }
+
         .link-text {
           display: none;
           margin-left: 1rem;
           font-size: 0.8rem;
           color: $gray;
         }
+
         &:hover { 
           svg { color: $ice; }
           .link-text { display: inline; }
-        }
-      }
-      .logo {
-        display: flex;
-        height: 3rem;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-bottom: 0.6rem;
-        background: $black;
-        color: $gray;
-        &:hover {
-          .logo-text { color: $white; }
-          .logo-no {
-            transition: $slow;
-            color: $yellow;
-          }
-        }
-        .logo-text {
-          font-weight: bold;
-          font-size: 0.8rem;
-          letter-spacing: 0.45ch;
-        }
-        .logo-no {
-          font-size: 1.7rem;
-          letter-spacing: -0.2ch;
         }
       }
     }

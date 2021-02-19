@@ -8,12 +8,14 @@
     <%= render 'shared/shim' %>
   </head>
   <body>
-    <% if current_user.present? %>
-      <%= render 'shared/navbar' %>
-    <% end %>
-    <main>
-      <%= render 'shared/flash_messages' %>
-      <%= yield %>
-    </main>
+    <div class="dashboard">
+      <% if current_user.present? %>
+        <%= render 'shared/totally_useless_header' %>
+        <%= render 'shared/navbar' %>
+      <% end %>
+      <div class="chart">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

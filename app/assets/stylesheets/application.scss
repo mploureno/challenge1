@@ -9,8 +9,10 @@
   "base/typography";
 
 @import
-  "layouts/navbar",
-  "layouts/forms";
+  "partials/navbar",
+  "partials/forms",
+  "partials/grids",
+  "partials/totally_useless_header";
 
 @import
   "components/buttons",

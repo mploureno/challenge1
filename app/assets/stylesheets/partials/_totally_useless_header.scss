@@ -1,0 +1,39 @@
+.totally-useless-header {
+  position: relative;
+  grid-area: tuh;
+  background: $black;
+  color: $gray;
+
+  &__logo {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    @include center-it;
+
+    &-text {
+      font-weight: bold;
+      font-size: 0.8rem;
+      letter-spacing: 0.45ch;
+    }
+
+    &-number {
+      font-size: 1.7rem;
+      letter-spacing: -0.2ch;
+    }
+  }
+
+  &:hover & {
+    &__logo {
+
+      &-text {
+        color: $white;
+      }
+
+      &-number {
+        transition: $slow;
+        color: $yellow;
+      }
+    }
+  }
+}

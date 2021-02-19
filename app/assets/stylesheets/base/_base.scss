@@ -9,21 +9,18 @@ html {
 }
 
 body {
-  display: flex;
   color: #444;
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
   overflow-x: hidden;
   @include scrollbar(0.5em, 0.43em, $dark-yellow, $black);
 
-  main {
-    height: 90%;
-    width: 100%;
-    @include center-it;
+  .chart {
+    grid-area: chart;
   }
 
   @media (max-width: 650px) {
-    main {
+    .chart {
       margin-top: 0;
     }
   }

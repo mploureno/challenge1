@@ -1,0 +1,9 @@
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: .5fr   6fr;
+  grid-template-rows:    .15fr 3fr;
+  grid-template-areas:
+                        "tuh tuh"
+                        "nav chart";
+}
