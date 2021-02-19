@@ -1,2 +1,4 @@
-<h3 class="header"><%= t('.header') %></h3>
-<%= render 'form', client: @client, url: client_path(@client) %>
+<div class="form">
+  <h1 class="legend"><%= t('.legend') %></h1>
+  <%= render 'form', client: @client, url: client_path(@client) %>
+</div>

@@ -1,7 +1,8 @@
-<h3 class="header"><%= t('.header') %></h3>
+<%= render 'shared/flash_messages', object: resource %>
+
 <div class="form">
+  <h1 class="legend"><%= t('.legend') %></h1>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <%= render 'shared/error_messages', object: resource %>
     <div class="form__group">
       <%= f.email_field :email,
                         autofocus: true,

@@ -2,7 +2,7 @@ en:
   devise:
     registrations: 
       new: 
-        header: "Sign Up"
+        legend: "Sign Up"
         name: "First Name"
         last_name: "Last Name"
         email: "example@email.com"

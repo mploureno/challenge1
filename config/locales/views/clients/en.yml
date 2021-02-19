@@ -8,12 +8,12 @@ en:
       submit: "Save"
       back: "Cancel"
     index:
-      header: "Clients"
+      legend: "Clients"
       empty: "List Empty" 
     edit:
-      header: "Edit"
+      legend: "Edit"
     new:
-      header: "New Client"
+      legend: "New Client"
     show:
       edit: "Edit"
       delete: "Remove" 

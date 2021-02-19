@@ -1,8 +1,8 @@
-en: 
+en:
   devise:
     sessions:
       new:
-        header: "Login"
+        legend: "Login"
         email: "example@email.com"
         password: "Password"
         remember: "Remember me"
