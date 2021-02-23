@@ -1,7 +1,7 @@
 <% if object.errors.any? %>
-  <div class="popup">
+  <div id="close" class="popup">
     <h2><%= t('.validation_failed') %></h2>
-    <a class="close" href="#">&times;</a>
+    <span class="close">&times;</span>
     <div class="content">
       <ul>
         <% object.errors.full_messages.each do |message| %>
