@@ -1,0 +1,6 @@
+en: 
+  shared:
+    navbar:
+      new_contact: "new contact"
+      sign_out: "Logout"
+      list_clients: "Clients"
