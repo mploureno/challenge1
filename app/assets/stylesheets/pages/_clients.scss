@@ -6,6 +6,7 @@
   top: 45%;
   font: 100% $ubuntu-font-stack;
   color: $gray;
+
   .clients-list-item > li {
     max-width: 100%;
     margin-bottom: 1rem;
@@ -15,9 +16,19 @@
     font-size: 1.5rem;
     letter-spacing: .6ch;
     transition: $fast;
+
     &:hover {
       opacity: .5;
     }
+  }
+
+  &__empty {
+    width: 100%;
+    padding: 2rem;
+    color: $gray;
+    font-size: 1.6rem;
+    text-align: center;
+    border: 2px solid $light-gray;
   }
 }
 
@@ -30,16 +41,20 @@
   text-align: center;
   box-shadow: 0 2px 4px 0 $dark-gray;
   transition: $fast;
+
   &:hover {
     box-shadow: 0 4px 8px 0 $dark-gray;
   }
+
   .client-card-container {
     height: 100%;
     padding: 1rem;
     position: relative;
+
     .card-text {
       @include center-it;
     }
+
     .card-btn {
       margin-top: 400px;
       padding: 0.6rem;
@@ -51,8 +66,10 @@
 }
 
 @media (max-width: 991px) {
+
   .clients-list {
     padding: 48px;
+
     .clients-list-item > li {
       font-size: 1.4rem;
     }
@@ -60,7 +77,9 @@
 }
 
 @media (max-width: 375px) {
+
   .clients-list {
+
     .clients-list-item > li {
       width: 270px;
     }

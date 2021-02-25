@@ -10,26 +10,6 @@
   text-align: center;
 }
 
-.clients-list {
-
-  &__empty {
-    width: 100%;
-    padding: 2rem;
-    color: $gray;
-    font-size: 1.6rem;
-    text-align: center;
-    border: 2px solid $light-gray;
-  }
-}
-
-.alert {
-  text-align: center;
-  margin-bottom: 6px;
-  background-color: $ice;
-  font-size: 12px;
-  p { font-size: 1rem; }
-}
-
 @media (max-width: 375px) {
   .legend {
     width: 100%;
