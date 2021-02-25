@@ -3,7 +3,6 @@
   @include center-it;
   width: 100vw;
   height: 100vh; 
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
 
   &__popup {
@@ -13,11 +12,12 @@
     @include center-it;
     background: $ice;
     border-radius: 5px;
-    transition: $slow;
+    border: none;
+    transition: $fast;
     z-index: 20;
-    box-shadow: 0 0 2px $dark-yellow,
-                0 0 2px $dark-yellow,
-                0 0 2px $dark-yellow;
+    box-shadow: 0  2px 40px $light-gray,
+                0  2px 10px $light-gray,
+                0  0   40px $dark-gray;
 
     h2 {
       margin-top: 0;
@@ -32,19 +32,38 @@
       font-size: 40px;
       font-weight: bold;
       text-decoration: none;
-      color: $black;
+      color: $gray;
+      ;
       cursor: pointer;
 
       &:hover {
-        transition: $fast;
-        color: $dark-yellow;
+        color: $light-gray;
       }
     }
 
     &:hover {
-      box-shadow: 0 0 8px $dark-yellow,
-                  0 0 16px $dark-yellow,
-                  0 0 8px $dark-yellow;
+      box-shadow: 0    0    8px  $light-gray,
+                  0    0    16px $light-gray,
+                  20px 20px 2px  $dark-gray;
     }
+  }
+}
+
+.alert {
+  width: 20rem;
+  padding: 30px;
+  transition: $slow;
+  text-align: center;
+  border-radius: 5px;
+  background-color: $ice;
+  font-size: 1rem;
+  box-shadow: 0 0 2px  $gray,
+              0 0 16px $dark-gray,
+              0 0 2px  $dark-gray;
+  
+  &:hover {
+    box-shadow: 0 0 8px  $dark-yellow,
+                0 0 16px $dark-yellow,
+                0 0 8px  $dark-yellow;
   }
 }
