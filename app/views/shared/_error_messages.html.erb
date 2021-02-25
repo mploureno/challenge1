@@ -1,13 +1,15 @@
 <% if object.errors.any? %>
-  <div id="close" class="popup">
-    <h2><%= t('.validation_failed') %></h2>
-    <span class="close">&times;</span>
-    <div class="content">
-      <ul>
-        <% object.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+  <div id="close" class="modal">
+    <div class="modal__popup">
+      <h2><%= t('.validation_failed') %></h2>
+      <span class="modal__popup__close">&times;</span>
+      <div>
+        <ul>
+          <% object.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
 <% end %>

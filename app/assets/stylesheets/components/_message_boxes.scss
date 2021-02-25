@@ -1,0 +1,50 @@
+.modal {
+  position: absolute;
+  @include center-it;
+  width: 100vw;
+  height: 100vh; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__popup {
+    width: 20rem;
+    padding: 30px;
+    position: fixed;
+    @include center-it;
+    background: $ice;
+    border-radius: 5px;
+    transition: $slow;
+    z-index: 20;
+    box-shadow: 0 0 2px $dark-yellow,
+                0 0 2px $dark-yellow,
+                0 0 2px $dark-yellow;
+
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    &__close {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      transition: all 200ms;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      color: $black;
+      cursor: pointer;
+
+      &:hover {
+        transition: $fast;
+        color: $dark-yellow;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 8px $dark-yellow,
+                  0 0 16px $dark-yellow,
+                  0 0 8px $dark-yellow;
+    }
+  }
+}
