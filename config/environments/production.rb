@@ -10,6 +10,8 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.assets.js_compressor = :uglifier
   config.assets.compile = false
+  config.assets.precompile += %w( '.svg' )
+  config.assets.css_compressor = :sass
   config.force_ssl = true
   config.log_level = :debug
   config.log_tags = [:request_id]
