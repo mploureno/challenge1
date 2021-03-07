@@ -3,7 +3,7 @@
   @include center-it;
   width: 100vw;
   height: 100vh; 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $bg-modal;
 
   &__popup {
     width: 20rem;
@@ -21,7 +21,7 @@
 
     h2 {
       margin-top: 0;
-      color: #333;
+      color: $gray;
     }
 
     &__close {
@@ -50,20 +50,21 @@
 }
 
 .alert {
-  width: 20rem;
-  padding: 30px;
+  position: absolute;
+  right: 50%;
+  transform: (translateX(50%));
   transition: $slow;
-  text-align: center;
-  border-radius: 5px;
-  background-color: $ice;
-  font-size: 1rem;
-  box-shadow: 0 0 2px  $gray,
-              0 0 16px $dark-gray,
-              0 0 2px  $dark-gray;
-  
-  &:hover {
-    box-shadow: 0 0 8px  $dark-yellow,
-                0 0 16px $dark-yellow,
-                0 0 8px  $dark-yellow;
-  }
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: $red;
+}
+
+.notice {
+  margin-top: 16px;
+  position: absolute;
+  right: 50%;
+  transform: (translateX(50%));
+  transition: $slow;
+  font-size: 1.3rem;
+  color: $dark-yellow;
 }

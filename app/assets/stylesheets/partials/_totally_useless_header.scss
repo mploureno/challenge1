@@ -3,7 +3,7 @@
   grid-area: tuh;
   background: $black;
   color: $gray;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  box-shadow: 0 3px 8px 0 $light-gray;
 
   &__logo {
     height: 50%;
@@ -14,12 +14,12 @@
 
     &-text {
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       letter-spacing: 0.45ch;
     }
 
     &-number {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       letter-spacing: -0.2ch;
     }
   }

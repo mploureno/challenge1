@@ -1,18 +1,21 @@
 // colors
-$ice: #D5DBDB;
-$lighter-gray: #D0D3D4;
-$light-gray: #7F8C8D;
-$gray: #424949;
-$dark-gray: #2D2D2B;
-$yellow: #FFC300;
-$dark-yellow: #B7950B;
-$white: #ECF0F1;
-$black: #141418;
+$bg-modal: rgba(0, 0, 0, 0.5);
+$black: rgba(20, 20, 24, 1);
+$dark-gray: rgba(45, 45, 43, 1);
+$dark-yellow: rgba(183, 149, 11, 1);
+$gray: rgba(66, 73, 73, 1);
+$gray2: rgba(66, 73, 73, 0.8);
+$ice: rgba(213, 219, 219, 1);
+$lighter-gray: rgba(208, 211, 212, 1);
+$light-gray: rgba(127, 140, 141, 1);
+$red: rgba(186, 87, 84, 1);
+$white: rgba(236, 240, 241, 1);
+$yellow: rgba(255, 195, 0, 1);
 
 // speed
 $fast: 200ms;
 $slow: 750ms;
 
 //fonts
-$ubuntu-font-stack: ('Ubuntu', sans-serif);
 $roboto-font-stack: ('Roboto', sans-serif);
+$ubuntu-font-stack: ('Ubuntu', sans-serif);
