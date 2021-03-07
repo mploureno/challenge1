@@ -1,2 +1,13 @@
-<p class="alert"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% flash.each do |type, value| %>
+  <div id="close" class=<%= "#{type}" %>>
+    <% if value.kind_of?(Array) %>
+      <ul>
+        <% value.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <%= value %>
+    <% end %>
+  </div>
+<% end %>
