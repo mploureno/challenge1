@@ -6,6 +6,7 @@
 
 @import
   "base/base",
+  "base/reset",
   "base/typography";
 
 @import
@@ -16,10 +17,8 @@
 
 @import
   "components/buttons",
-  "components/message_boxes";
-
-@import
-  "pages/clients";
+  "components/message_boxes",
+  "components/tables";
 
 @import
   "vendors/normalize";

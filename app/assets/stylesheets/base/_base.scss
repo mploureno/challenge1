@@ -1,19 +1,8 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
 body {
-  color: #444;
+  color: $gray;
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
   overflow: hidden;
-  @include scrollbar(0.5em, 0.43em, $dark-yellow, $black);
 
   .chart {
     grid-area: chart;
