@@ -1,0 +1,46 @@
+.table-wrapper {
+  @include center-it;
+  @include scrollbar(
+    50%,
+    8px,
+    5px,
+    $dark-yellow,
+    $dark-gray
+  );
+
+  width: 75%;
+  padding: 64px;
+  top: 35%;
+  overflow-x: hidden;
+}
+
+table {
+  border-spacing: 5px;
+  border-collapse: separate
+}
+
+th, td {
+  padding: 10px 50px;
+  text-align: center;
+  border: hidden;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: -1px;
+  background-color: $light-gray;
+  border-radius: 5px;
+  font-size: 3em;
+  z-index: 2;
+
+  &:first-of-type {
+    left: 0;
+    z-index: 3;
+  }
+}
+
+td {
+  background-color: $ice;
+  font-size: 1.2em;
+}

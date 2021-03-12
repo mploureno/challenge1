@@ -1,15 +1,25 @@
-<div class="clients-list">
-  <h1 class="legend"><%= t('.legend') %></h1>
+<div class="table-wrapper">
   <% unless current_user.clients.exists? %>
     <p class="clients-list__empty">
       <%= t('.empty') %>
     </p>
   <% end %>
-  <% @clients.each do |client| %>
-    <%= link_to client_path(client) do %>
-      <ul class="clients-list-item">
-        <li><%= "#{client.first_name} #{client.last_name}" %></li>
-      </ul>
+  <table>
+    <thead>
+      <tr>
+        <th><%= t('.legend') %></th>
+        <th><%= t('.email') %></th>
+        <th><%= t('.phone') %></th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= "#{client.first_name} #{client.last_name}" %></td>
+        <td><%= "#{client.email}" %></td>
+        <td><%= "#{client.mobile_phone}" %></td>
+      </tr>
     <% end %>
-  <% end %>
+    </tbody>      
+  </table>
 </div>
