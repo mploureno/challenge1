@@ -1,74 +1,97 @@
 .navbar {
   grid-area: nav;
-  z-index: 1;
+  padding-bottom: 8px;
   transition: width $fast ease;
   background-color: $dark-gray;
+  box-shadow: 3px 0 2px -1px $light-gray;
+  z-index: 20;
 
-  .navbar-nav {
+  &__list {
     display: flex;
     flex-direction: column;
     height: 100%;
     list-style: none;
 
-    .nav-item {
+    &__item {
+      width: 100%;
+      font-family: $poppins-font-stack;
 
-      &:nth-child(2) { margin-top: auto; }
+      &:first-child { margin-top: 20px; }
+      &:nth-last-child(2) { margin-top: auto; }
+      &:last-child {
+        margin: 7px 0 0;
+        font-size: 58%;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: $fast;
 
-      .nav-link {
+        &:hover {
+          color: rgba($color: $yellow, $alpha: .5);
+        }
+      }
+
+      &__link {
+        height: 32px;
         display: flex;
         align-items: center;
-        height: 4rem;
-        text-decoration: none;
+        justify-content: center;
 
-        svg {
-          width: 30px;
-          margin-left: 0.75rem;
+        &__svg {
+          width: 24px;
+          margin-right: 7px;
           color: $light-gray;
+          transition: $fast;
         }
 
-        .link-text {
-          display: none;
-          margin-left: 1rem;
-          font-size: 0.8rem;
+        &__text {
+          // font-family: $poppins-font-stack;
+          font-size: 1.6ch;
           color: $gray;
+          transition: $slow;
         }
 
-        &:hover { 
-          svg { color: $ice; }
-          .link-text { display: inline; }
+        &:hover & {
+          &__text,
+          &__svg { color: $ice; }
         }
       }
     }
   }
 }
 
-/* SMALL SCREENS */
 @media (max-width: 991px) {
   .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 3.8rem;
-    .navbar-nav {
-      background: $dark-gray;
+
+    &__list {
       flex-direction: row;
       align-items: center;
-      .nav-item {
-        .nav-link {
+      justify-content: space-around;
+      background: $dark-gray;
+
+      &__item {
+
+        &:nth-last-child(2) { margin: auto 0; }
+
+        &__link {
           justify-content: space-around;
-          &:hover {
-            .link-text {
+
+          &__text {
+            display: none;
+          }
+
+          &:hover & {
+
+            &__text {
               display: none;
             }
           }
         }
-        &:first-child {
+
+        &:last-child {
           display: none;
         }
       }
     }
-  }
-
-  main {
-    margin: 0;
   }
 }

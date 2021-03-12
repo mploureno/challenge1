@@ -12,10 +12,11 @@ $red: rgba(186, 87, 84, 1);
 $white: rgba(236, 240, 241, 1);
 $yellow: rgba(255, 195, 0, 1);
 
+//fonts
+$poppins-font-stack: ('Poppins', sans-serif);
+$roboto-font-stack: ('Roboto', sans-serif);
+$ubuntu-font-stack: ('Ubuntu', sans-serif);
+
 // speed
 $fast: 200ms;
 $slow: 750ms;
-
-//fonts
-$roboto-font-stack: ('Roboto', sans-serif);
-$ubuntu-font-stack: ('Ubuntu', sans-serif);

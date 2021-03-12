@@ -4,6 +4,7 @@
   background: $black;
   color: $gray;
   box-shadow: 0 3px 8px 0 $light-gray;
+  z-index: 10;
 
   &__logo {
     height: 50%;
@@ -12,27 +13,28 @@
     text-transform: uppercase;
     @include center-it;
 
-    &-text {
+    &__text {
       font-weight: bold;
       font-size: 0.7rem;
       letter-spacing: 0.45ch;
+      transition: $fast;
     }
 
-    &-number {
+    &__number {
       font-size: 1.4rem;
       letter-spacing: -0.2ch;
+      transition: $slow;
     }
   }
 
   &:hover & {
     &__logo {
 
-      &-text {
+      &__text {
         color: $white;
       }
 
-      &-number {
-        transition: $slow;
+      &__number {
         color: $yellow;
       }
     }
