@@ -1,4 +1,4 @@
-//= require modal
+//= require closeModal
 //= require rails-ujs
 //= require activestorage
 //= require jquery3
