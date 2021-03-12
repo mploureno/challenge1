@@ -1,8 +1,7 @@
 .submit-btn {
   height: 40px;
   width: 100%;
-  margin-top: 8px;
-  margin-bottom: 10px;
+  margin: 18px 0 18px;
   font: $roboto-font-stack;
   font-size: 15px;
   background-color: $ice;
@@ -22,7 +21,6 @@
 .nav-btn {
   font-size: 14px;
   font-weight: bolder;
-  text-decoration: none;
   color: $gray;
 
   &:hover {

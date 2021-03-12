@@ -7,13 +7,13 @@
       <% end %>
     </li>
     <li class="navbar__list__item">
-      <%= link_to destroy_user_session_path, method: :delete, class:'navbar__list__item__link' do %>
+      <%= link_to destroy_user_session_path, class:'navbar__list__item__link', method: :delete do %>
         <%= load_svg('logout.svg') %>
         <span class="navbar__list__item__link__text"><%= t('.sign_out') %></span>
       <% end %>
     </li>
     <li class="navbar__list__item">
-      <a href="https://github.com/mploureno" style="font-size:0.7em;padding:1px;" target="_blank">
+      <a href="https://github.com/mploureno" target="_blank">
         <span>powered by cleito &#169;</span>
       </a>
     </li>

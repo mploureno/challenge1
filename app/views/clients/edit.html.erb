@@ -1,4 +1,5 @@
 <div class="form">
   <h1 class="legend"><%= t('.legend') %></h1>
   <%= render 'form', client: @client, url: client_path(@client) %>
+  <%= link_to t('.back'), clients_path, class: 'nav-btn' %>
 </div>
