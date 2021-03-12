@@ -1,5 +1,5 @@
 function closeModal() {
-  const target = document.getElementById('modal');
+  var target = document.getElementById('modal');
 
   if (target) target.style.display = 'none';
 }
