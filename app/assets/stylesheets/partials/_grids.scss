@@ -7,3 +7,16 @@
                         "tuh tuh"
                         "nav chart";
 }
+
+@media (max-width: 991px) {
+  .dashboard {
+    height: 100vh;
+    display: grid;
+    grid-template-rows:   .5fr 9fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                          "tuh"
+                          "chart"
+                          "nav";
+  }
+}
