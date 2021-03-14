@@ -1,10 +1,7 @@
 require: rubocop-rspec
 
-Rails:
-  Enabled: true
-
 AllCops:
-  TargetRubyVersion: 2.7.2
+  TargetRubyVersion: 2.7.1
   Exclude:
     - bin/**/*
     - db/**/*
