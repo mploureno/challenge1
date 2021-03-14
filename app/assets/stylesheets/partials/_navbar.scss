@@ -20,9 +20,8 @@
       &:nth-last-child(2) { margin-top: auto; }
       &:last-child {
         margin: 7px 0 0;
-        font-size: 58%;
+        font-size: 50%;
         text-align: center;
-        overflow: hidden;
         white-space: nowrap;
         transition: $fast;
 
@@ -45,7 +44,6 @@
         }
 
         &__text {
-          // font-family: $poppins-font-stack;
           font-size: 1.6ch;
           color: $gray;
           transition: $slow;
@@ -64,18 +62,16 @@
   .navbar {
 
     &__list {
+      display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
       background: $dark-gray;
 
       &__item {
-
-        &:nth-last-child(2) { margin: auto 0; }
+        &:nth-child(1) { margin: 0; }
+        &:nth-last-child(2) { margin: auto; }
 
         &__link {
-          justify-content: space-around;
-
           &__text {
             display: none;
           }

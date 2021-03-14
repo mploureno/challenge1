@@ -7,13 +7,12 @@
   width: 100%;
   color: $dark-gray;
   font: 100% $roboto-font-stack;
-  font-size: 4rem;
+  font-size: 4.5em;
   text-align: center;
 }
 
 @media (max-width: 375px) {
   .legend {
-    width: 100%;
     font-size: 32px;
   }
 }

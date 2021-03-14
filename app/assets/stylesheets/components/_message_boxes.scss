@@ -1,11 +1,11 @@
 .modal {
+  height: 100vh;
+  width:  100vw;
   position: absolute;
   @include center-it;
-  width: 100vw;
-  height: 100vh; 
   background-color: $bg-modal;
 
-  &__popup {
+  &__wrapper {
     width: 20rem;
     padding: 30px;
     position: fixed;
@@ -15,35 +15,27 @@
     border: none;
     transition: $fast;
     z-index: 20;
-    box-shadow: 0  2px 40px $light-gray,
-                0  2px 10px $light-gray,
-                0  0   40px $dark-gray;
-
-    h2 {
-      margin-top: 0;
-      color: $gray;
-    }
-
-    &__close {
-      position: absolute;
-      top: 0;
-      right: 20px;
-      transition: all 200ms;
-      font-size: 40px;
-      font-weight: bold;
-      color: $gray;
-      ;
-      cursor: pointer;
-
-      &:hover {
-        color: $light-gray;
-      }
-    }
+    box-shadow: 4px 4px 40px $light-gray;
 
     &:hover {
-      box-shadow: 0    0    8px  $light-gray,
-                  0    0    16px $light-gray,
-                  20px 20px 2px  $dark-gray;
+      box-shadow: 1px 2px 40px $light-gray,
+      1px 2px 10px $light-gray,
+      1px 1px 40px $dark-gray;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    transition: all $fast;
+    font-size: 40px;
+    font-weight: bold;
+    color: $gray;
+    cursor: pointer;
+
+    &:hover {
+      color: $light-gray;
     }
   }
 }
@@ -54,7 +46,7 @@
   transform: (translateX(50%));
   transition: $slow;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   color: $red;
 }
 
@@ -67,3 +59,4 @@
   font-size: 1.3rem;
   color: $dark-yellow;
 }
+

@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 class ClientsController < ApplicationController
   before_action :authenticate_user!
   before_action :fetch_client, only: %i[edit show update destroy]
 
   def index
-    @clients = current_user.clients.order("created_at DESC")
+    @clients = current_user.clients.order('created_at DESC')
   end
 
   def show; end
 
-  def new 
+  def new
     @client = current_user.clients.build
   end
 
@@ -25,7 +27,7 @@ class ClientsController < ApplicationController
     redirect_to clients_path
   end
 
-  def create 
+  def create
     @client = current_user.clients.new(client_params)
     if @client.save
       redirect_to clients_path
@@ -49,3 +51,4 @@ class ClientsController < ApplicationController
     )
   end
 end
+

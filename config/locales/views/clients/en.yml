@@ -8,8 +8,9 @@ en:
       submit: "Save"
       back: "Cancel"
     index:
-      legend: "Clients"
-      empty: "List Empty" 
+      legend: "Name"
+      empty: "List Empty"
+      confirmation: "Are you sure?"
     edit:
       legend: "Edit"
     new:

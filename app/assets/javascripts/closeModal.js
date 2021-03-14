@@ -4,5 +4,5 @@ function closeModal() {
   if (target) target.style.display = 'none';
 }
 
-setInterval(closeModal, 2400);
+setTimeout(closeModal, 3500);
 window.onclick = closeModal;

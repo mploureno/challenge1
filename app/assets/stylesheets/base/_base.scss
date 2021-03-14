@@ -3,8 +3,8 @@ body {
   background: $lighter-gray;
   font: 100% $ubuntu-font-stack;
   overflow: hidden;
+}
 
-  .chart {
-    grid-area: chart;
-  }
+.chart {
+  grid-area: chart;
 }
