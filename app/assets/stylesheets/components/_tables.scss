@@ -7,40 +7,50 @@
     $dark-yellow,
     $dark-gray
   );
-
-  width: 75%;
-  padding: 64px;
-  top: 35%;
+  max-height: 80%;
+  min-width: 80%;
+  margin: 20px 0 0 40px;
   overflow-x: hidden;
 }
 
 table {
-  border-spacing: 5px;
-  border-collapse: separate
+  border-collapse: separate;
 }
 
 th, td {
   padding: 10px 50px;
   text-align: center;
-  border: hidden;
-  white-space: nowrap;
 }
 
 th {
   position: sticky;
   top: -1px;
-  background-color: $light-gray;
-  border-radius: 5px;
   font-size: 3em;
+  background-color: $light-gray;
+  border-radius: 10px 0;
   z-index: 2;
 
   &:first-of-type {
-    left: 0;
-    z-index: 3;
+    background-color: $dark-yellow;
   }
 }
 
 td {
-  background-color: $ice;
+  width: 100%;
+  border-spacing: px;
+  word-wrap: break-word;
   font-size: 1.2em;
+  background-color: $ice;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.empty {
+  width: 100%;
+  padding: 2em;
+  font-size: 2em;
+  text-align: center;
+  color: $gray;
+  border: 2px solid $light-gray;
+  border-radius: 10px;
 }

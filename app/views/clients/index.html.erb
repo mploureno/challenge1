@@ -1,25 +1,37 @@
 <div class="table-wrapper">
-  <% unless current_user.clients.exists? %>
-    <p class="clients-list__empty">
-      <%= t('.empty') %>
-    </p>
-  <% end %>
+<% if current_user.clients.exists? %>
   <table>
     <thead>
       <tr>
         <th><%= t('.legend') %></th>
         <th><%= t('.email') %></th>
         <th><%= t('.phone') %></th>
+        <th>actions</th>
       </tr>
     </thead>
     <tbody>
     <% @clients.each do |client| %>
+      <tr></tr>
       <tr>
         <td><%= "#{client.first_name} #{client.last_name}" %></td>
         <td><%= "#{client.email}" %></td>
         <td><%= "#{client.mobile_phone}" %></td>
+        <td>
+          <%= link_to t('.edit'), edit_client_path(client),
+                                  class: 'nav-btn' %>
+
+          <%= link_to t('.delete'), client_path(client),
+                                    class: 'nav-btn',
+                                    method: :delete,
+                                    data: { confirm: t('.confirmation') } %>
+        </td>
       </tr>
     <% end %>
-    </tbody>      
+    </tbody>
   </table>
+<% else %>
+  <p class="empty">
+    <%= t('.empty') %>
+  </p>
+<% end %>
 </div>
