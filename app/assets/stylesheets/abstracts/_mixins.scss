@@ -1,8 +1,25 @@
 @mixin center-it {
-  position: absolute;
   top:  50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin mq($size) {
+
+  $md: "(max-width: 768px)";
+  $lg: "(max-width: 992px)";
+  $xl: "(max-width: 1200px)";
+
+  @if $size == xl {
+    @media #{$xl} { @content; }
+  }
+  @else if $size == lg {
+    @media #{$lg} { @content; }
+  }
+  @else if $size == xl {
+    @media #{$md}  { @content; }
+  }
+
 }
 
 @mixin scrollbar( $height, 
@@ -13,7 +30,7 @@
 
   &::-webkit-scrollbar {
     height: $height;
-    width:  $width;
+    width: $width;
   }
 
   &::-webkit-scrollbar-thumb {

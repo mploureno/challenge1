@@ -1,22 +1,17 @@
 .dashboard {
   height: 100vh;
   display: grid;
-  grid-template-columns: .5fr   6fr;
-  grid-template-rows:    .15fr 3fr;
+  grid-template-columns: 1fr  12fr;
+  grid-template-rows:    1fr  22fr 3fr;
   grid-template-areas:
                         "tuh tuh"
+                        "nav chart"
                         "nav chart";
-}
 
-@media (max-width: 991px) {
-  .dashboard {
-    height: 100vh;
-    display: grid;
-    grid-template-rows:   .5fr 9fr 1fr;
-    grid-template-columns: 1fr;
+  @include mq(lg) {
     grid-template-areas:
-                          "tuh"
-                          "chart"
-                          "nav";
+                          "tuh tuh"
+                          "chart chart"
+                          "nav nav";
   }
 }

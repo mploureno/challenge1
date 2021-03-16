@@ -1,48 +1,71 @@
 .table-wrapper {
+  position: absolute;
   @include center-it;
   @include scrollbar(
     50%,
-    8px,
     5px,
-    $dark-yellow,
+    5px,
+    $light-gray,
     $dark-gray
   );
-  max-height: 80%;
-  min-width: 80%;
-  margin: 20px 0 0 40px;
+
+  width: 95%;
+  height: 80%;
+  border-radius: 10px;
   overflow-x: hidden;
+  box-shadow: 1px 1px 10px $gray;
+
+  @include mq(lg) {
+    display: none;
+  }
 }
 
 table {
+  padding: 0 0.5rem;
   border-collapse: separate;
+  border-spacing: 0.2rem;
 }
 
 th, td {
-  padding: 10px 50px;
   text-align: center;
+  box-shadow: 1px 1px 2px $light-gray;
 }
 
 th {
+  padding: 35px;
   position: sticky;
-  top: -1px;
+  top: 3px;
   font-size: 3em;
-  background-color: $light-gray;
-  border-radius: 10px 0;
+  color: $white;
+  background-color: $gray;
+  border-radius: 5px;
   z-index: 2;
 
   &:first-of-type {
-    background-color: $dark-yellow;
+    background-color: $dark-gray;
+  }
+}
+
+tr {
+
+  &:hover {
+    td {
+      background-color: $ice;
+      box-shadow: 0   1px 5px $gray,
+                  1px 1px  10px $white;
+    }
   }
 }
 
 td {
   width: 100%;
-  border-spacing: px;
+  padding: 30px;
   word-wrap: break-word;
-  font-size: 1.2em;
-  background-color: $ice;
+  font-size: 1.1em;
+  background-color: transparent;
   border-radius: 10px;
   overflow: hidden;
+  transition: $fast;
 }
 
 .empty {

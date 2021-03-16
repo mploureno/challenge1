@@ -1,42 +1,49 @@
 .totally-useless-header {
-  position: relative;
   grid-area: tuh;
+  position: relative;
   background: $black;
   color: $gray;
   box-shadow: 0 3px 8px 0 $light-gray;
   z-index: 10;
 
-  &__logo {
+  &__container {
     height: 50%;
+    position: absolute;
+    @include center-it;
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    @include center-it;
+  }
 
-    &__text {
-      font-weight: bold;
-      font-size: 0.7rem;
-      letter-spacing: 0.45ch;
-      transition: $fast;
+  &__text {
+    font-size: 0.5em;
+    letter-spacing: 0.45ch;
+    font-weight: bold;
+    transition: $fast;
+
+    @include mq(lg) {
+      font-size: 0.5em;
     }
+  }
 
-    &__number {
-      font-size: 1.4rem;
-      letter-spacing: -0.2ch;
-      transition: $slow;
+  &__number {
+    font-size: 0.9em;
+    letter-spacing: -0.1ch;
+    transition: $slow;
+
+    @include mq(lg) {
+      font-size: 1em;
     }
   }
 
   &:hover & {
-    &__logo {
 
-      &__text {
-        color: $white;
-      }
+    &__text {
+      color: $white;
+    }
 
-      &__number {
-        color: $yellow;
-      }
+    &__number {
+      color: $yellow;
     }
   }
 }
