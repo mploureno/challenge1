@@ -1,3 +1,13 @@
+<div class="clients-list">
+  <% @clients.each do |client| %>
+    <%= link_to client_path(client) do %>
+      <ul class="clients-list-item">
+        <li><%= "#{client.first_name} #{client.last_name}" %></li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
+
 <div class="table-wrapper">
 <% if current_user.clients.exists? %>
   <table>
@@ -6,24 +16,25 @@
         <th><%= t('.legend') %></th>
         <th><%= t('.email') %></th>
         <th><%= t('.phone') %></th>
-        <th>actions</th>
+        <th><i class="fa fa-cogs" aria-hidden="true"></i></th>
       </tr>
     </thead>
     <tbody>
     <% @clients.each do |client| %>
-      <tr></tr>
       <tr>
         <td><%= "#{client.first_name} #{client.last_name}" %></td>
         <td><%= "#{client.email}" %></td>
         <td><%= "#{client.mobile_phone}" %></td>
         <td>
-          <%= link_to t('.edit'), edit_client_path(client),
-                                  class: 'nav-btn' %>
+          <%= link_to edit_client_path(client) do %>
+            <span><%= t('.edit') %></span>
+            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+          <% end %>
 
-          <%= link_to t('.delete'), client_path(client),
-                                    class: 'nav-btn',
-                                    method: :delete,
-                                    data: { confirm: t('.confirmation') } %>
+          <%= link_to client_path(client), method: :delete, data: { confirm: t('.confirmation') } do %>
+            <span><%= t('.delete') %></span>
+            <i class="fas fa-trash" aria-hidden="true"></i>
+          <% end %>
         </td>
       </tr>
     <% end %>

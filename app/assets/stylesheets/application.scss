@@ -18,7 +18,11 @@
 @import
   "components/buttons",
   "components/message_boxes",
-  "components/tables";
+  "components/tables",
+  "components/list",
+  "components/cards";
 
 @import
-  "vendors/normalize";
+  "vendors/normalize",
+  "font-awesome-sprockets",
+  "font-awesome";
