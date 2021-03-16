@@ -9,3 +9,12 @@ body {
   grid-area: chart;
   position: relative;
 }
+
+// overwrite browsers default input background/text styles
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active { 
+  -webkit-box-shadow: 0 0 0 30px $ice inset !important;
+  -webkit-text-fill-color: $light-gray !important;
+}
