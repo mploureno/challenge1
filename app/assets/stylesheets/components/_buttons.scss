@@ -2,6 +2,7 @@
   width: 100%;
   font: 100% $poppins-font-stack;
   text-align: center;
+  font-size: .9em;
   color: $gray;
   background-color: $ice;
   border-radius: 10px;
@@ -46,9 +47,9 @@
     justify-content: center;
     background-color: transparent;
     font-size: 1.2em;
-    transition: background-color $slow,
-                color $slow,
-                transform $slow;
+    transition: color $slow,
+                transform $slow,
+                background-color $slow;
 
     &:hover {
       color: $white;
@@ -76,6 +77,26 @@
   &--cancel {
     &:hover {
       background-color: $dark-yellow;
+    }
+  }
+
+  &--tab {
+    min-height: 40px;
+    padding: 1rem;
+    @include row;
+    font-weight: bolder;
+    color: $ice;
+    background-color: $half-black;
+    text-shadow: 1px 1px 5px $quarter-black;
+    transition: $slow;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $white;
+    }
+
+    @include mq(md) {
+      font-size: .6em !important;
     }
   }
 }

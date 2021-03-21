@@ -9,22 +9,27 @@
   padding: .5rem 1rem;
   background-color: $ice;
   border-radius: 8px;
-  box-shadow: 0 12px 24px 4px $quarter-black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: $fast;
-  text-shadow: .5px .5px 2px $dark-gray;
+  color: $quarter-black;
+  text-shadow: .2px .2px 1px $gray;
+  box-shadow: 0 12px 24px 4px $quarter-black;
 
   &__title {
     margin: 1rem;
-    padding: .5rem 1rem;
+    padding: .3rem .7rem;
     border-radius: 50px;
     transition: $fast;
     cursor: pointer;
     color: $white;
-    text-shadow: .5px .5px 2px $gray;
+    text-shadow: .5px .5px 2px $white;
+
+    @include mq(md) {
+      font-size: .8em;
+    }
 
     &--badge {
       background-color: $dark-yellow;
@@ -38,8 +43,12 @@
   &__info {
     padding: 6px;
     font-size: 1.2em;
+    color: $quarter-black;
     text-align: center;
-    white-space: nowrap;
+
+    @include mq(md) {
+      font-size: 1em;
+    }
   }
 
   img {

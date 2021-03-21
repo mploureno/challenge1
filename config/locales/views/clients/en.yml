@@ -8,7 +8,7 @@ en:
       submit: "Save"
     index:
       legend: "Name"
-      empty: "List Empty"
+      empty: "Try adding a new contact!"
       confirmation: "Are you sure?"
     edit:
       legend: "Edit"
