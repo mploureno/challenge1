@@ -2,7 +2,7 @@ en:
   devise:
     sessions:
       new:
-        legend: "Login"
+        legend: "Sign In"
         email: "example@email.com"
         password: "Password"
         remember: "Remember me"

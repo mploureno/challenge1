@@ -1,31 +1,33 @@
 <div class="form">
-  <h1 class="legend"><%= t('.legend') %></h1>
+  <h1 class="form__legend"><%= t('.legend') %></h1>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="form__group">
+    <div class="form__field">
       <%= f.email_field :email,
                         autofocus: true,
                         autocomplete: 'on',
                         placeholder: t('.email'),
-                        class: 'form__group__input' %>
+                        class: 'form__input' %>
     </div>
-    <div class="form_group">
+    <div class="form__field">
       <%= f.password_field :password,
                             autocomplete: 'off',
                             placeholder: t('.password'),
-                            class: 'form__group__input' %>
+                            class: 'form__input' %>
     </div>
     <% if devise_mapping.rememberable? -%>
-      <div class="remember">
-        <%= f.check_box :remember_me, class: 'remember__checkbox' %>
-        <%= f.label :remember_me, t('.remember'), class: 'remember__label' %>
+    <div class="form__field">
+      <div class="remember-me">
+        <%= f.check_box :remember_me, class: 'remember-me__input' %>
+        <%= f.label :remember_me, t('.remember'), class: 'remember-me__label' %>
       </div>
-    <% end -%>
-    <div class="form__group">
-      <%= f.submit t('.submit'), class: 'submit-btn' %>
     </div>
-    <div class="form__group">
-      <p class="form__group__label"><%= t('.registrate') %></p>
-      <%= link_to t('.signup'), new_user_registration_path, class: 'nav-btn' %>
+    <% end -%>
+    <div class="form__field">
+      <%= f.submit t('.submit'), class: 'btn btn--submit' %>
+    </div>
+    <div class="form__field">
+      <p class="form__label"><%= t('.registrate') %></p>
+      <%= link_to t('.signup'), new_user_registration_path, class: 'btn btn--link' %>
     </div>
   <% end %>
 </div>

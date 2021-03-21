@@ -6,15 +6,16 @@ en:
       email: "example@email.com"
       phone: "(xx) xxxx-xxxx"
       submit: "Save"
-      back: "Cancel"
     index:
       legend: "Name"
       empty: "List Empty"
       confirmation: "Are you sure?"
     edit:
       legend: "Edit"
+      back: "cancel"
     new:
-      legend: "New Client"
+      legend: "contact"
+      back: "cancel"
     show:
       edit: "Edit"
       delete: "Remove" 

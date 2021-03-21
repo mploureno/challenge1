@@ -1,5 +1,5 @@
 <% flash.each do |type, value| %>
-  <div id="modal" class=<%= "#{type}" %>>
+  <div id="modal" class="flash flash--<%= "#{type}" %>">
     <% if value.kind_of?(Array) %>
       <ul>
         <% value.each do |message| %>

@@ -1,10 +1,14 @@
 // colors
 $bg-modal: rgba(0, 0, 0, 0.5);
 $black: rgba(20, 20, 24, 1);
+$half-black: rgba(20, 20, 24, .5);
+$quarter-black: rgba(20, 20, 24, .3);
 $dark-gray: rgba(45, 45, 43, 1);
-$dark-yellow: rgba(183, 149, 11, 1);
+$dark-yellow: rgba(255, 168, 50, 1);
+$half-dark-yellow: rgba(255, 168, 50, .5);
 $gray: rgba(66, 73, 73, 1);
-$gray2: rgba(66, 73, 73, 0.8);
+$half-gray: rgba(66, 73, 73, 0.8);
+$green: rgba(0, 177, 106, 1);
 $ice: rgba(213, 219, 219, 1);
 $lighter-gray: rgba(208, 211, 212, 1);
 $light-gray: rgba(127, 140, 141, 1);
@@ -19,4 +23,5 @@ $ubuntu-font-stack:  ('Ubuntu', sans-serif);
 
 // speed
 $fast: 200ms;
-$slow: 650ms;
+$slow: 500ms;
+$lazy: 650ms;

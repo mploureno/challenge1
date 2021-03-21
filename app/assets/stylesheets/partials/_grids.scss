@@ -4,14 +4,14 @@
   grid-template-columns: 1fr  12fr;
   grid-template-rows:    1fr  22fr 3fr;
   grid-template-areas:
-                        "tuh tuh"
-                        "nav chart"
-                        "nav chart";
+                        "header header"
+                        "navbar main"
+                        "navbar main";
 
   @include mq(lg) {
     grid-template-areas:
-                          "tuh tuh"
-                          "chart chart"
-                          "nav nav";
+                          "header header"
+                          "main   main"
+                          "navbar navbar";
   }
 }

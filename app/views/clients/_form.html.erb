@@ -1,29 +1,31 @@
 <%= form_for(client, url: url) do |f| %>
   <%= render 'shared/error_messages', object: client %>
-    <div class="form__group">
+    <div class="form__field">
       <%= f.text_field :first_name,
                       autofocus:true,
                       autocomplete: 'on',
                       placeholder: t('.name'),
-                      class: 'form__group__input' %>
+                      class: 'form__input' %>
     </div>
-    <div class="form__group">
+    <div class="form__field">
       <%= f.text_field :last_name,
                       autocomplete: 'on',
                       placeholder: t('.last_name'),
-                      class: 'form__group__input' %>
+                      class: 'form__input' %>
     </div>
-    <div class="form__group">
+    <div class="form__field">
       <%= f.email_field :email,
                       autocomplete: 'on',
                       placeholder: t('.email'),
-                      class: 'form__group__input' %>
+                      class: 'form__input' %>
     </div>
-    <div class="form__group">
+    <div class="form__field">
       <%= f.text_field :mobile_phone,
                       autocomplete: 'on',
                       placeholder: t('.phone'),
-                      class: 'form__group__input' %>
+                      class: 'form__input' %>
     </div>
-    <%= f.submit t('.submit'), class: 'submit-btn'%>
+    <div class="form__field">
+      <%= f.submit t('.submit'), class: 'btn btn--submit'%>
+    </div>
   <% end %>

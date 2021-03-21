@@ -1,5 +1,8 @@
 <div class="form">
-  <h1 class="legend"><%= t('.legend') %></h1>
+  <h1 class="form__legend"><%= t('.legend') %></h1>
   <%= render 'form', client: @client, url: client_path(@client) %>
-  <%= link_to t('.back'), clients_path, class: 'nav-btn' %>
+  <%= link_to clients_path, class: 'btn btn--link' do %>
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <%= t('.back') %>
+  <% end %>
 </div>
