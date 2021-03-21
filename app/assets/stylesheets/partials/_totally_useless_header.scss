@@ -1,5 +1,5 @@
 .totally-useless-header {
-  grid-area: tuh;
+  grid-area: header;
   position: relative;
   background: $black;
   color: $gray;
@@ -7,11 +7,9 @@
   z-index: 10;
 
   &__container {
-    height: 50%;
     position: absolute;
     @include center-it;
-    display: flex;
-    align-items: center;
+    @include row;
     text-transform: uppercase;
   }
 
@@ -19,20 +17,29 @@
     font-size: 0.5em;
     letter-spacing: 0.45ch;
     font-weight: bold;
-    transition: $fast;
+    // transition: $fast;
 
     @include mq(lg) {
       font-size: 0.5em;
     }
+
+    @include mq(sm) {
+      font-size: 0.1em;
+    }
   }
 
   &__number {
+    margin-bottom: 2px;
     font-size: 0.9em;
     letter-spacing: -0.1ch;
-    transition: $slow;
+    transition: $fast;
 
     @include mq(lg) {
       font-size: 1em;
+    }
+
+    @include mq(sm) {
+      font-size: 0.5em;
     }
   }
 
@@ -40,10 +47,14 @@
 
     &__text {
       color: $white;
+      text-shadow: 1px 0 2px $light-gray;
+      transform: scale(1.05);
     }
 
     &__number {
+      font-size: 1.2em;
       color: $yellow;
+      text-shadow: .8px 0 4px $yellow;
     }
   }
 }

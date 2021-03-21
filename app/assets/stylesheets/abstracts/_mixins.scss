@@ -6,9 +6,10 @@
 
 @mixin mq($size) {
 
-  $md: "(max-width: 768px)";
-  $lg: "(max-width: 992px)";
   $xl: "(max-width: 1200px)";
+  $lg: "(max-width: 992px)";
+  $md: "(max-width: 768px)";
+  $sm: "(max-width: 650px)";
 
   @if $size == xl {
     @media #{$xl} { @content; }
@@ -16,8 +17,12 @@
   @else if $size == lg {
     @media #{$lg} { @content; }
   }
-  @else if $size == xl {
+  @else if $size == md {
     @media #{$md}  { @content; }
+  }
+
+  @else if $size == sm {
+    @media #{$sm}  { @content; }
   }
 
 }
@@ -42,4 +47,10 @@
     background-color: $bg-clr;
     border-radius: $border-rad;
   }
+}
+
+@mixin row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

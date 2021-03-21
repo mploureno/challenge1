@@ -1,29 +1,81 @@
-.submit-btn {
-  height: 40px;
+.btn {
   width: 100%;
-  margin: 18px 0;
-  font: $roboto-font-stack;
-  font-size: 15px;
+  font: 100% $poppins-font-stack;
+  text-align: center;
+  color: $gray;
   background-color: $ice;
-  color: $gray;
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
   cursor: pointer;
-  transition: $fast;
 
-  &:hover {
-    background-color: $light-gray;
-    color: $white;
+  @include mq(sm) {
+    height: 40px !important;
   }
-}
 
-.nav-btn {
-  font-size: 14px;
-  font-weight: bolder;
-  color: $gray;
+  @include mq(md) {
+    font-size: .8em !important;
+  }
 
-  &:hover {
-    color: $black;
+  &--submit {
+    height: 40px;
+    margin: 20px 0 15px;
+    font-weight: bold;
+    transition: $slow;
+    box-shadow: 0 1px 3px $light-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      color: $white;
+    }
+  }
+
+  &--link {
+    @include row;
+    font-weight: bold;
+    transition: $fast;
+    background-color: transparent;
+
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  &--card {
+    padding: .6rem .8rem;
+    @include row;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 1.2em;
+    transition: background-color $slow,
+                color $slow,
+                transform $slow;
+
+    &:hover {
+      color: $white;
+      box-shadow: 0 0 16px $half-black;
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 16px $quarter-black;
+    }
+  }
+
+  &--edit {
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &--delete {
+    &:hover {
+      background-color: $red;
+    }
+  }
+
+  &--cancel {
+    &:hover {
+      background-color: $dark-yellow;
+    }
   }
 }
