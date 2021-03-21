@@ -1,8 +1,16 @@
-<div class="clients-list">
+<div class="list-container">
   <% @clients.each do |client| %>
     <%= link_to client_path(client) do %>
-      <ul class="clients-list-item">
-        <li><%= "#{client.first_name} #{client.last_name}" %></li>
+      <ul class="list">
+        <li class="list__item">
+          <%= "#{client.first_name} #{client.last_name}" %>
+          <span class="list__detail">
+            <%= "#{client.email}" %>
+          </span>
+          <span class="list__detail">
+            <%= "last updated #{client.updated_at}" %>
+          </span>
+        </li>
       </ul>
     <% end %>
   <% end %>
@@ -21,17 +29,16 @@
     </thead>
     <tbody>
     <% @clients.each do |client| %>
-      <tr>
+      <tr class="table-row">
         <td><%= "#{client.first_name} #{client.last_name}" %></td>
         <td><%= "#{client.email}" %></td>
         <td><%= "#{client.mobile_phone}" %></td>
         <td>
-          <%= link_to edit_client_path(client) do %>
+          <%= link_to edit_client_path(client), class: 'btn--link'  do %>
             <span><%= t('.edit') %></span>
             <i class="fas fa-pencil-alt" aria-hidden="true"></i>
           <% end %>
-
-          <%= link_to client_path(client), method: :delete, data: { confirm: t('.confirmation') } do %>
+          <%= link_to client_path(client), class: 'btn--link', method: :delete, data: { confirm: t('.confirmation') } do %>
             <span><%= t('.delete') %></span>
             <i class="fas fa-trash" aria-hidden="true"></i>
           <% end %>

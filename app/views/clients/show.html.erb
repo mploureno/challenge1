@@ -1,20 +1,25 @@
-<div class="client-card">
-  <div class="client-card-container">
-    <div class="card-text">
-      <h3><%= "#{@client.first_name} #{@client.last_name}" %></h3>
-      <h5><%= @client.email %></h5>
-      <h5><%= @client.mobile_phone %></h5>
-    </div>
-    <div class="card-btn">
-      <%= link_to t('.edit'), edit_client_path,
-                              class: 'nav-btn' %>
-      <%= link_to t('.delete'), client_path(@client),
-                                class: 'nav-btn',
-                                method: :delete,
-                                data: { confirm: t('.confirmation') } %>
+<div class="card-container">
+  <div class="card">
+    <h1><%= "#{@client.first_name} #{@client.last_name}" %></h1>
+    <div class="card__title card__title--badge">Vendor</div>
+    <div class="card__info"><%= @client.email %></div>
+    <div class="card__info"><%= @client.mobile_phone %></div>
+    <img>
+      <div class="card__footer">
+        <%= link_to edit_client_path, class: 'btn btn--card btn--edit' do %>
+          <span><%= t('.edit') %></span>
+          <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+        <% end %>
 
-      <%= link_to t('.back'), clients_path,
-                              class: 'nav-btn' %>
+        <%= link_to client_path(@client), class: 'btn btn--card btn--delete', method: :delete, data: { confirm: t('.confirmation') } do %>
+          <span><%= t('.delete') %></span>
+          <i class="fas fa-trash" aria-hidden="true"></i>
+        <% end %>
+
+        <%= link_to clients_path, class: 'btn btn--card btn--cancel' do %>
+          <span><%= t('.back') %></span>
+          <i class="fa fa-reply" aria-hidden="true"></i>
+        <% end %>
     </div>
   </div>
 </div>

@@ -1,0 +1,24 @@
+.remember-me {
+  width: 100%;
+  margin: 8px 8px 0;
+  @include row;
+  justify-content: flex-start;
+
+  &__input {
+    height: 15px;
+    width: 15px;
+
+    @include mq(sm) {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &__label {
+    font-size: .95em;
+
+    @include mq(sm) {
+      font-size: .8em !important;
+    }
+  }
+}

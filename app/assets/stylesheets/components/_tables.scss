@@ -9,8 +9,8 @@
     $dark-gray
   );
 
-  width: 95%;
   height: 80%;
+  width: 95%;
   border-radius: 10px;
   overflow-x: hidden;
   box-shadow: 1px 1px 10px $gray;
@@ -22,6 +22,7 @@
 
 table {
   padding: 0 0.5rem;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0.2rem;
 }
@@ -35,7 +36,7 @@ th {
   padding: 35px;
   position: sticky;
   top: 3px;
-  font-size: 3em;
+  font-size: 2.5em;
   color: $white;
   background-color: $gray;
   border-radius: 5px;
@@ -46,7 +47,7 @@ th {
   }
 }
 
-tr {
+.table-row {
 
   &:hover {
     td {
@@ -58,14 +59,22 @@ tr {
 }
 
 td {
+  height: 100%;
   width: 100%;
-  padding: 30px;
-  word-wrap: break-word;
-  font-size: 1.1em;
-  background-color: transparent;
-  border-radius: 10px;
+  padding: 24px;
   overflow: hidden;
-  transition: $fast;
+  white-space: nowrap;
+  font-family: $poppins-font-stack;
+  font-size: 1.18em;
+  text-shadow: .5px .5px 1.5px $dark-gray;
+  border-radius: 10px;
+  transition: $slow;
+  cursor: pointer;
+
+  &:last-of-type {
+    @include row;
+    justify-content: center;
+  }
 }
 
 .empty {

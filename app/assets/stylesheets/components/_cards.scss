@@ -1,0 +1,56 @@
+.card-container {
+  position: fixed;
+  @include center-it;
+}
+
+.card {
+  width: 75vw;
+  height: 70vh;
+  padding: .5rem 1rem;
+  background-color: $ice;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px 4px $quarter-black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: $fast;
+  text-shadow: .5px .5px 2px $dark-gray;
+
+  &__title {
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    transition: $fast;
+    cursor: pointer;
+    color: $white;
+    text-shadow: .5px .5px 2px $gray;
+
+    &--badge {
+      background-color: $dark-yellow;
+
+      &:hover {
+        box-shadow: 2px 2px 16px $half-dark-yellow;
+      }
+    }
+  }
+
+  &__info {
+    padding: 6px;
+    font-size: 1.2em;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  img {
+    height: 85%;
+    width: 100%;
+  }
+
+  &__footer {
+    padding: 6px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
