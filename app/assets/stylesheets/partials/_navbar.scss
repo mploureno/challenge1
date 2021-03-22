@@ -33,20 +33,21 @@
   }
 
   &__item-link {
-    height: 32px;
-    display: flex;
-    align-items: center;
+    @include row;
     justify-content: center;
 
     &:hover {
       .navbar__link-svg,
-      .navbar__link-text { color: $light-gray; }
+      .navbar__link-text { 
+        color: $light-gray;
+        text-shadow: 0 0 1px $ice;
+      }
     }
   }
 
   &__link-svg {
-    min-width: 1.9rem;
-    width: 1.9rem;
+    min-width: 2rem;
+    width: 2rem;
     margin-right: 7px;
     color: $gray;
     transition: $slow;
@@ -64,7 +65,6 @@
       padding: 0;
 
       &__list {
-        height: 100%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -72,10 +72,14 @@
   
       &__list-item {
         &:nth-child(1) { margin: 0; }
-        &:nth-last-child(2) { margin: 0; }
+        &:nth-last-child(2) { margin-top: 0; }
         &:last-child { display: none; }
       }
-  
+
+      &__item-link {
+        height: 100%;
+      }
+
       &__link-text {
         display: none;
       }

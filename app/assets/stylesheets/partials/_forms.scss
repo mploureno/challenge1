@@ -30,7 +30,7 @@
     font-size: 3.6em;
     text-align: center;
     white-space: nowrap;
-    text-shadow: 2px 2px 5px $light-gray;
+    text-shadow: 1px 1px 3px $light-gray;
 
     @include mq(xl) {
       font-size: 3.5rem;
